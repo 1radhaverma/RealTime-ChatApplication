@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "Hash": "pe0O8hPS0hYYdc1NxXNn6+UZr9qeyOSw/Z/hB4IdqAo=",
+  "Source": "API",
+  "BasePath": "_content/API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/67225c8f-6f92-4572-a609-0c2bf230a8b0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tmht6di4m4",
+      "Integrity": "e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg"
+    },
+    {
+      "Identity": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/bc5a4851-e674-447e-a07c-9c35601b67da#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tmht6di4m4",
+      "Integrity": "e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg"
+    },
+    {
+      "Identity": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/dc3c11b7-59b8-4641-a4fa-d941e2656091#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tmht6di4m4",
+      "Integrity": "e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
+      "AssetFile": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:52:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/67225c8f-6f92-4572-a609-0c2bf230a8b0.tmht6di4m4.jpg",
+      "AssetFile": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:52:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmht6di4m4"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
+      "AssetFile": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:53:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bc5a4851-e674-447e-a07c-9c35601b67da.tmht6di4m4.jpg",
+      "AssetFile": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:53:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmht6di4m4"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/bc5a4851-e674-447e-a07c-9c35601b67da.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
+      "AssetFile": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:53:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/dc3c11b7-59b8-4641-a4fa-d941e2656091.tmht6di4m4.jpg",
+      "AssetFile": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:53:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmht6di4m4"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e8cYMCRr4JzAzf+sS2MsUWHjaPnCo99Eb2IlzMAYx1E="
+        }
+      ]
+    }
+  ]
+}
