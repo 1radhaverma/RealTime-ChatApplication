@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg"
+    },
+    {
+      "Id": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg"
+    },
+    {
+      "Id": "D:\\R.V\\PROJECTS-'25\\RealTime-ChatApplication\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
+      "PackagePath": "staticwebassets\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
