@@ -30,8 +30,8 @@ namespace API.Endpoints
                 {
                     return Results.BadRequest(Response<string>.Failure("Profile Image Required."));
                 }
-                var picture = await FileUpload.Upload(profileImage);
-                picture = $"{context.Request.Scheme}: {context.Request.Host}/uploads/";
+                string fileName = await FileUpload.Upload(profileImage);
+                string picture = $"{context.Request.Scheme}://{context.Request.Host}/uploads/{fileName}"; // Correct URL
 
                 var user = new AppUser
                 {

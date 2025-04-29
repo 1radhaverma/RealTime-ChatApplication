@@ -7,16 +7,63 @@
       "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\chat.db||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\chat.db||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\dtos\\onlineuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\dtos\\onlineuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\dtos\\messagerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\dtos\\messagerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\services\\fileupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\services\\fileupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\endpoints\\accountendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\endpoints\\accountendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\dtos\\messagerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\dtos\\messagerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\common\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\common\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\extensions\\claimsprincipleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\extensions\\claimsprincipleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\vs\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\migrations\\20250330175408_messagetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,51 +78,8 @@
       "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\extensions\\claimsprincipleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\extensions\\claimsprincipleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\dtos\\onlineuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\dtos\\onlineuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\services\\fileupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\services\\fileupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\vs\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\common\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\common\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -85,8 +89,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -94,15 +110,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Program.cs",
-              "RelativeDocumentMoniker": "API\\Program.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Program.cs",
-              "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T06:19:11.996Z",
-              "EditorCaption": ""
+              "Title": "chat.db",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\chat.db",
+              "RelativeDocumentMoniker": "API\\chat.db",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\chat.db",
+              "RelativeToolTip": "API\\chat.db",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIKSURBVDhPrZXfS1NhGMe/EynnCI7roG2w3OaOa4vMcgV2YQjdeWV3QlBmECQIYlMKVMRQYnhRiSQUhQjd9D\u002BsC3HJbhTaav7YHMdIsoGghW5nO72Op9yB98hJ\u002BsDhPc/7fPmc9z0HzmsC8WggmAJUJ5VHYFpXCmgPhUKLNHGIqqolwofqyOgYVfoMDz6G2Wze3vm518qTltH4T9zp7BJOWSrCwWCwkab\u002BcizhGZtdV3os4QF60nIauWxsbiGxJsMvOWGrthbnBEEovscShPIyhNlYdVBwhb/29rH0eQ3Z/Sx2dncRX0kimZYhuR3o7eun1CHsAQLd8rccW07h\u002B1YGhUIegQYf8nkF6Y1vkL9uUkIfrrDR54GiKPA4HXCdtcPrrmV1Dhd8EiX00VlhErlcFrHEKlaSaSzFl1mdw4f5KCX04QptNSL7CGJREp5bQJ6ttlqsQnPTRUrowxXWiFZcb25CA9tixckT8HvduNFyDSlZRvfAIBY/xfAjk6G0Fq7wD7UOOzputsFb58KLV2/x8s0sztd78GxqGtOvZyil5UhhKX6prih70HWbfZxzqJfc1NFiWBj/ksBCNIqJ55OYj3xkV4Q6WgwL797qQM/9e4gwWX9vD54MD1FHi2GheNqKwOVLeP9uFlevBGCxVFJHi2GhUf67sOSP3ceOAJOBI4CHuj7\u002BdMIFAL8B2kWpjQLikHsAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-23T06:07:19.525Z"
             },
             {
               "$type": "Document",
@@ -112,74 +126,98 @@
               "RelativeDocumentMoniker": "API\\Hubs\\ChatHub.cs",
               "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Hubs\\ChatHub.cs",
               "RelativeToolTip": "API\\Hubs\\ChatHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T05:40:18.637Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250330175408_MessageTable.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.cs",
-              "RelativeDocumentMoniker": "API\\Migrations\\20250330175408_MessageTable.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.cs",
-              "RelativeToolTip": "API\\Migrations\\20250330175408_MessageTable.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T06:04:58.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20250330175408_MessageTable.Designer.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.Designer.cs",
-              "RelativeDocumentMoniker": "API\\Migrations\\20250330175408_MessageTable.Designer.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.Designer.cs",
-              "RelativeToolTip": "API\\Migrations\\20250330175408_MessageTable.Designer.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAIAwwGUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T06:04:52.879Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MessageRequestDto.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\MessageRequestDto.cs",
-              "RelativeDocumentMoniker": "API\\DTOs\\MessageRequestDto.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\MessageRequestDto.cs",
-              "RelativeToolTip": "API\\DTOs\\MessageRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T05:40:21.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Message.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Models\\Message.cs",
-              "RelativeDocumentMoniker": "API\\Models\\Message.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Models\\Message.cs",
-              "RelativeToolTip": "API\\Models\\Message.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T17:25:08.68Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\appsettings.json",
+              "RelativeToolTip": "API\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-29T14:56:26.252Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "API\\Models\\AppUser.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Models\\AppUser.cs",
+              "RelativeToolTip": "API\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:31:36.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AccountEndpoint.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Endpoints\\AccountEndpoint.cs",
               "RelativeDocumentMoniker": "API\\Endpoints\\AccountEndpoint.cs",
               "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Endpoints\\AccountEndpoint.cs",
               "RelativeToolTip": "API\\Endpoints\\AccountEndpoint.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAAFQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T16:46:14.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 9,
+              "Title": "FileUpload.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Services\\FileUpload.cs",
+              "RelativeDocumentMoniker": "API\\Services\\FileUpload.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Services\\FileUpload.cs",
+              "RelativeToolTip": "API\\Services\\FileUpload.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T11:25:38.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:19:11.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Response.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Common\\Response.cs",
+              "RelativeDocumentMoniker": "API\\Common\\Response.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Common\\Response.cs",
+              "RelativeToolTip": "API\\Common\\Response.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIAzwBQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:01:54.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OnlineUserDto.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\OnlineUserDto.cs",
+              "RelativeDocumentMoniker": "API\\DTOs\\OnlineUserDto.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\OnlineUserDto.cs",
+              "RelativeToolTip": "API\\DTOs\\OnlineUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T05:40:21.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\LoginDTO.cs",
               "RelativeDocumentMoniker": "API\\DTOs\\LoginDTO.cs",
@@ -191,55 +229,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OnlineUserDto.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\OnlineUserDto.cs",
-              "RelativeDocumentMoniker": "API\\DTOs\\OnlineUserDto.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\OnlineUserDto.cs",
-              "RelativeToolTip": "API\\DTOs\\OnlineUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T05:40:21.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "API\\Services\\TokenService.cs",
               "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Services\\TokenService.cs",
               "RelativeToolTip": "API\\Services\\TokenService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T14:02:27.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FileUpload.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Services\\FileUpload.cs",
-              "RelativeDocumentMoniker": "API\\Services\\FileUpload.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Services\\FileUpload.cs",
-              "RelativeToolTip": "API\\Services\\FileUpload.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "MessageRequestDto.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\MessageRequestDto.cs",
+              "RelativeDocumentMoniker": "API\\DTOs\\MessageRequestDto.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\MessageRequestDto.cs",
+              "RelativeToolTip": "API\\DTOs\\MessageRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T11:25:38.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\AppDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "API\\Migrations\\AppDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\AppDbContextModelSnapshot.cs",
-              "RelativeToolTip": "API\\Migrations\\AppDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAIAwwGIAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:40:22.6Z"
+              "WhenOpened": "2025-03-31T05:40:21.332Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "API\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:07:01.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Message.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Models\\Message.cs",
+              "RelativeToolTip": "API\\Models\\Message.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T17:25:08.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ClaimsPrincipleExtensions.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Extensions\\ClaimsPrincipleExtensions.cs",
               "RelativeDocumentMoniker": "API\\Extensions\\ClaimsPrincipleExtensions.cs",
@@ -251,75 +289,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "API.csproj",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\API.csproj",
-              "RelativeDocumentMoniker": "API\\API.csproj",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\API.csproj",
-              "RelativeToolTip": "API\\API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-29T06:01:59.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "API\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "API\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T06:07:01.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "API\\Models\\AppUser.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Models\\AppUser.cs",
-              "RelativeToolTip": "API\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T06:31:36.959Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\appsettings.json",
-              "RelativeDocumentMoniker": "API\\appsettings.json",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\appsettings.json",
-              "RelativeToolTip": "API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-29T14:56:26.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Response.cs",
-              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Common\\Response.cs",
-              "RelativeDocumentMoniker": "API\\Common\\Response.cs",
-              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Common\\Response.cs",
-              "RelativeToolTip": "API\\Common\\Response.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA1wAkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T17:01:54.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "D:\\vs\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\vs\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "D:\\vs\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeToolTip": "..\\..\\..\\vs\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAOUUAAAAAAAAAAAWwPoUAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAPcUAAAAAAAAAAAMwAIVAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-03-29T19:23:38.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20250330175408_MessageTable.Designer.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.Designer.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\20250330175408_MessageTable.Designer.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.Designer.cs",
+              "RelativeToolTip": "API\\Migrations\\20250330175408_MessageTable.Designer.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAIAwwGUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T06:04:52.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250330175408_MessageTable.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\20250330175408_MessageTable.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.cs",
+              "RelativeToolTip": "API\\Migrations\\20250330175408_MessageTable.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBZwBYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T06:04:58.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "API\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "API\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAIAwwGIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:40:22.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "API.csproj",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\API.csproj",
+              "RelativeDocumentMoniker": "API\\API.csproj",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\API.csproj",
+              "RelativeToolTip": "API\\API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-29T06:01:59.642Z"
             }
           ]
         }
