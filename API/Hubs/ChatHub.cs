@@ -35,7 +35,7 @@ namespace API.Hubs
                 {
                     ConnectionId = connectionId,
                     UserName = userName,
-                    ProfileImg = currentUser!.ProfileImage,
+                    ProfileImage = currentUser!.ProfileImage,
                     FullName = currentUser!.Fullname,
 
                 };
@@ -53,15 +53,17 @@ namespace API.Hubs
             int pageSize = 10;
             var userName = Context.User!.Identity!.Name;
             var currentUser = await userManager.FindByNameAsync(userName!);
-          
-            if(currentUser is null) 
+
+            if (currentUser is null)
             {
                 return;
             }
-            List<MessageRequestDto> messages = await context.Messages
+
+            // Get messages with UTC timestamps
+            var messages = await context.Messages
                  .Where(x => (x.ReceiverId == currentUser.Id && x.SenderId == recipientId ||
                   x.SenderId == currentUser!.Id && x.ReceiverId == recipientId))
-                 .OrderByDescending(x => x.CreatedDate)
+                 .OrderByDescending(x => x.CreatedDate) // Consistent ordering
                  .Skip((pageNumber - 1) * pageSize)
                  .Take(pageSize)
                  .Select(x => new MessageRequestDto
@@ -70,10 +72,12 @@ namespace API.Hubs
                      SenderId = x.SenderId,
                      ReceiverId = x.ReceiverId,
                      Content = x.Content,
-                     CreatedDate = x.CreatedDate
-                 }).ToListAsync();
+                     CreatedDate = x.CreatedDate // ISO 8601 format
+                 })
+                 .ToListAsync();
 
-            foreach(var message in messages)
+            // Mark messages as read
+            foreach (var message in messages)
             {
                 var msg = await context.Messages.FirstOrDefaultAsync(x => x.Id == message.Id);
                 if (msg != null && msg.ReceiverId == currentUser.Id)
@@ -82,9 +86,59 @@ namespace API.Hubs
                     await context.SaveChangesAsync();
                 }
             }
-            await Clients.User(currentUser.Id).SendAsync("ReceiveMessages", messages);
 
+            await Clients.User(currentUser.Id).SendAsync("ReceiveMessageList", new
+            {
+                messages,
+                pageNumber,
+                totalPages = (int)Math.Ceiling(await context.Messages.CountAsync(x =>
+                    (x.ReceiverId == currentUser.Id && x.SenderId == recipientId) ||
+                    (x.SenderId == currentUser.Id && x.ReceiverId == recipientId)) / (double)pageSize)
+            });
         }
+        //public async Task LoadMessages(string recipientId, int pageNumber = 1)
+        //{
+        //    int pageSize = 10;
+        //    var userName = Context.User!.Identity!.Name;
+        //    var currentUser = await userManager.FindByNameAsync(userName!);
+
+        //    if(currentUser is null) 
+        //    {
+        //        return;
+        //    }
+        //    List<MessageRequestDto> messages = await context.Messages
+        //         .Where(x => (x.ReceiverId == currentUser.Id && x.SenderId == recipientId ||
+        //          x.SenderId == currentUser!.Id && x.ReceiverId == recipientId))
+        //         .OrderByDescending(x => x.CreatedDate)
+        //         .Skip((pageNumber - 1) * pageSize)
+        //         .Take(pageSize)
+        //         .Select(x => new MessageRequestDto
+        //         {
+        //             Id = x.Id,
+        //             SenderId = x.SenderId,
+        //             ReceiverId = x.ReceiverId,
+        //             Content = x.Content,
+        //             CreatedDate = x.CreatedDate
+        //         }).ToListAsync();
+
+        //    foreach (var message in messages)
+        //    {
+        //        var msg = await context.Messages.FirstOrDefaultAsync(x => x.Id == message.Id);
+        //        if (msg != null && msg.ReceiverId == currentUser.Id)
+        //        {
+        //            msg.IsRead = true;
+        //            await context.SaveChangesAsync();
+        //        }
+        //    }
+        //    await Clients.User(currentUser.Id).SendAsync("ReceiveMessageList", new
+        //    {
+        //        messages,
+        //        totalCount = await context.Messages.CountAsync(x =>
+        //            (x.ReceiverId == currentUser.Id && x.SenderId == recipientId) ||
+        //            (x.SenderId == currentUser.Id && x.ReceiverId == recipientId))
+        //    });
+
+        //}
         public async Task SendMessage(MessageRequestDto message)
         {
             var senderId = Context.User!.Identity!.Name;
@@ -115,6 +169,7 @@ namespace API.Hubs
             {
                 await Clients.Client(connectionId).SendAsync("NotifyTypingtoUser", senderUserName);
             }
+
         }
         public override async Task OnDisconnectedAsync(Exception? exception)
         {
@@ -131,7 +186,7 @@ namespace API.Hubs
                 Id = u.Id,
                 UserName = u.UserName,
                 FullName = u.Fullname,
-                ProfileImg = u.ProfileImage,
+                ProfileImage = u.ProfileImage,
                 IsOnline = onlineUsersSets.Contains(u.UserName!),
                 UnreadCount = context.Messages.Count(x => x.ReceiverId == username && x.SenderId == u.Id && x.IsRead)
             }).OrderByDescending(u => u.IsOnline).ToListAsync();

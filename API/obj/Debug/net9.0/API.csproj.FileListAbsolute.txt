@@ -154,4 +154,5 @@ D:\R.V\PROJECTS-'25\RealTime-ChatApplication\API\bin\Debug\net9.0\tr\Microsoft.C
 D:\R.V\PROJECTS-'25\RealTime-ChatApplication\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\R.V\PROJECTS-'25\RealTime-ChatApplication\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\R.V\PROJECTS-'25\RealTime-ChatApplication\API\bin\Debug\net9.0\API.staticwebassets.runtime.json
-D:\R.V\PROJECTS-'25\RealTime-ChatApplication\API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\R.V\PROJECTS-'25\RealTime-ChatApplication\API\bin\Debug\net9.0\Newtonsoft.Json.dll
+D:\R.V\PROJECTS-'25\RealTime-ChatApplication\API\bin\Debug\net9.0\System.Net.WebSockets.WebSocketProtocol.dll
