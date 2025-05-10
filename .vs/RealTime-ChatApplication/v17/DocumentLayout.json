@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|d:\\r.v\\projects-\u002725\\realtime-chatapplication\\api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|API\\API.csproj|solutionrelative:api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -65,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -92,12 +96,21 @@
               "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:2110283326:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "API\\Hubs\\ChatHub.cs",
+              "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "API\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAuwMYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T20:24:56.511Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -109,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Response.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Common\\Response.cs",
               "RelativeDocumentMoniker": "API\\Common\\Response.cs",
@@ -121,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "OnlineUserDto.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\OnlineUserDto.cs",
               "RelativeDocumentMoniker": "API\\DTOs\\OnlineUserDto.cs",
@@ -133,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\LoginDTO.cs",
               "RelativeDocumentMoniker": "API\\DTOs\\LoginDTO.cs",
@@ -145,19 +158,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "API\\Services\\TokenService.cs",
               "ToolTip": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Services\\TokenService.cs",
               "RelativeToolTip": "API\\Services\\TokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T14:02:27.634Z"
+              "WhenOpened": "2025-03-30T14:02:27.634Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MessageRequestDto.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\DTOs\\MessageRequestDto.cs",
               "RelativeDocumentMoniker": "API\\DTOs\\MessageRequestDto.cs",
@@ -169,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "API\\Data\\AppDbContext.cs",
@@ -181,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Message.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Models\\Message.cs",
               "RelativeDocumentMoniker": "API\\Models\\Message.cs",
@@ -193,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ClaimsPrincipleExtensions.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Extensions\\ClaimsPrincipleExtensions.cs",
               "RelativeDocumentMoniker": "API\\Extensions\\ClaimsPrincipleExtensions.cs",
@@ -205,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "D:\\vs\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\vs\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -217,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "20250330175408_MessageTable.Designer.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.Designer.cs",
               "RelativeDocumentMoniker": "API\\Migrations\\20250330175408_MessageTable.Designer.cs",
@@ -229,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "20250330175408_MessageTable.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\20250330175408_MessageTable.cs",
               "RelativeDocumentMoniker": "API\\Migrations\\20250330175408_MessageTable.cs",
@@ -241,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "API\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -253,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "API.csproj",
               "DocumentMoniker": "D:\\R.V\\PROJECTS-\u002725\\RealTime-ChatApplication\\API\\API.csproj",
               "RelativeDocumentMoniker": "API\\API.csproj",

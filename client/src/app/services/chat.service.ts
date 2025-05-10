@@ -10,7 +10,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root',
 })
 export class ChatService {
-  private authService = inject(AuthService);
+private authService = inject(AuthService); 
   private hubUrl = 'http://localhost:5000/hubs/chat';
   
   // Signals
@@ -25,57 +25,113 @@ export class ChatService {
   private hubConnection?: HubConnection;
   private loadedMessageIds = new Set<number>();
   private chatMessagesSubject = new Subject<void>();
-  
+   private storageKey = 'chatMessages';
+  private currentChatKey = 'currentChatId';
+
   // Observables
   currentOpenedChat$ = toObservable(this.currentOpenedChat);
   chatMessages$ = this.chatMessagesSubject.asObservable();
 
   constructor() {
-    this.loadCacheFromStorage();
+   this.loadCacheFromStorage();
+    this.setupConnection();
   }
-
-  // Cache management
-  private loadCacheFromStorage() {
-    const cache = localStorage.getItem('chatMessageCache');
-    if (cache) {
-      this.messageCache = new Map(JSON.parse(cache));
+  private setupConnection() {
+    const token = this.authService.getAccessToken();
+    if (token && this.authService.currentLoggedUser) {
+      this.startConnection(token, this.authService.currentLoggedUser.id);
     }
   }
 
-  private saveCacheToStorage() {
-    localStorage.setItem(
-      'chatMessageCache', 
-      JSON.stringify(Array.from(this.messageCache.entries()))
-    );
+  // Cache management
+private loadCacheFromStorage() {
+    const cache = localStorage.getItem('chatMessageCache');
+    if (cache) {
+      try {
+        const parsed = JSON.parse(cache) as [string, Message[]][];
+        this.messageCache = new Map(parsed);
+      } catch (e) {
+        console.error('Error parsing cache', e);
+        this.messageCache = new Map();
+      }
+    }
   }
 
-  private cacheMessages(userId: string, messages: Message[]) {
-    this.messageCache.set(userId, messages);
-    this.saveCacheToStorage();
+validateCacheForUser(userId: string) {
+  const cached = this.messageCache.get(userId);
+  if (cached) {
+    // Remove any messages that don't belong to this chat
+    const validMessages = cached.filter(msg => 
+      (msg.senderId === userId || msg.receiverId === userId) &&
+      (msg.senderId === this.authService.currentLoggedUser?.id || 
+       msg.receiverId === this.authService.currentLoggedUser?.id)
+    );
+    this.messageCache.set(userId, validMessages);
+  }
+}
+ private saveCacheToStorage() {
+    localStorage.setItem(
+      'chatMessageCache',
+      JSON.stringify(Array.from(this.messageCache.entries())))
   }
 
   // Chat management
   setCurrentChat(user: User | null) {
-    // Cache current messages before switching
-    if (this.currentOpenedChat()) {
-      this.cacheMessages(
-        this.currentOpenedChat()!.id, 
-        this.chatMessages()
-      );
+    // Save current messages before switching
+    const currentChat = this.currentOpenedChat();
+    if (currentChat) {
+      this.cacheMessages(currentChat.id, this.chatMessages());
     }
 
     this.currentOpenedChat.set(user);
-    localStorage.setItem('currentChatId', user?.id || '');
-
+    
     if (user) {
-      const cachedMessages = this.messageCache.get(user.id);
-      if (cachedMessages) {
-        this.chatMessages.set(cachedMessages);
-      } else {
-        this.loadAllMessages();
-      }
+      localStorage.setItem('currentChatId', user.id);
+      this.loadChatHistory(user.id);
     } else {
+      localStorage.removeItem('currentChatId');
       this.chatMessages.set([]);
+    }
+  }
+private loadChatHistory(userId: string) {
+    // Load from cache first
+    const cached = this.messageCache.get(userId) || [];
+    this.chatMessages.set(cached);
+    this.chatMessagesSubject.next();
+    
+    // Then load from server
+    this.loadAllMessages(userId).catch(err => {
+      console.error('Failed to load messages:', err);
+    });
+  }
+  private cacheMessages(userId: string, messages: Message[]) {
+    const validMessages = messages.filter(msg => 
+      msg.content && msg.createdDate
+    );
+    this.messageCache.set(userId, validMessages);
+    this.saveCacheToStorage();
+  }
+    async loadAllMessages(userId: string): Promise<void> {
+    if (!userId || !this.hubConnection) {
+      this.isLoading.set(false);
+      return;
+    }
+
+    this.isLoading.set(true);
+
+    try {
+      const messages = await this.hubConnection.invoke<Message[]>('LoadAllMessages', userId);
+      const validMessages = messages.filter(msg => 
+        msg.id && !this.loadedMessageIds.has(msg.id)
+      );
+
+      validMessages.forEach(msg => this.loadedMessageIds.add(msg.id));
+      this.chatMessages.set(validMessages);
+      this.cacheMessages(userId, validMessages);
+    } catch (error) {
+      console.error('Error loading messages:', error);
+    } finally {
+      this.isLoading.set(false);
     }
   }
 
@@ -171,25 +227,6 @@ export class ChatService {
       receiverId: this.currentOpenedChat()?.id,
       content: message,
     }).catch(error => console.log('Send error:', error));
-  }
-
-  loadAllMessages(): Promise<void> {
-    const currentChat = this.currentOpenedChat();
-    if (!currentChat || !this.hubConnection) {
-      return Promise.reject('No active chat or connection');
-    }
-    
-    this.isLoading.set(true);
-    return this.hubConnection.invoke('LoadAllMessages', currentChat.id)
-      .then((messages: Message[]) => {
-        if (messages?.length) {
-          this.chatMessages.set(messages);
-          this.cacheMessages(currentChat.id, messages);
-          this.loadedMessageIds.clear();
-          messages.forEach(msg => this.loadedMessageIds.add(msg.id));
-        }
-      })
-      .finally(() => this.isLoading.set(false));
   }
 
   // Status methods

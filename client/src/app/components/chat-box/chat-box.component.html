@@ -1,78 +1,95 @@
-<div  #chatBox class="flex chat-box py-2 border-[20px] border-transparent flex-col">
+<div #chatBox class="flex chat-box py-2 border-[20px] border-transparent flex-col">
   <div class="flex-1 min-h-[100px] overflow-y-auto relative">
-    
-  
-      @for (item of chatService.chatMessages(); track $index + '-' + item.id) {
-        @if (item.senderId !== authService.currentLoggedUser?.id) {
-          <!-- RECEIVED MESSAGE UI -->
-          <div class="flex mb-3 flex-row items-center justify-normal">
+    @for (item of chatService.chatMessages(); track trackByMessageId($index, item); let i = $index) {
+      @if (shouldShowDateSeparator(i)) {
+        <div class="date-separator">
+          {{ formatMessageDate(item.createdDate) }}
+        </div>
+      }
+      
+      @if (item.senderId !== authService.currentLoggedUser?.id) {
+        <!-- RECEIVED MESSAGE UI -->
+        <div class="flex flex-row items-center justify-normal"
+             [class.mt-1]="isConsecutiveMessage(i)"
+             [class.mb-3]="!isConsecutiveMessage(i)">
+          @if(!isConsecutiveMessage(i)) {
             <div class="flex items-center justify-center h-10 w-10 rounded-full bg-gradient-to-r from-green-400 to-blue-500 flex-shrink-0">
               <img [src]="chatService.currentOpenedChat()?.profileImage"
                    [alt]="chatService.currentOpenedChat()?.fullName" class="rounded-full h-8 w-8" />
             </div>
-            <div class="chat-message bg-white p-4 rounded-lg ml-2 shadow-sm max-w-[70%]">
-              <span class="text-sm text-gray-800 block break-words">
-                {{ item.content }}
-              </span>
-              <span class="text-right text-gray-400 text-[10px] block mt-1">
-                {{ item.createdDate | date:'shortTime'}}
-              </span>
-            </div>
+          } @else {
+            <div class="w-10 flex-shrink-0"></div>
+          }
+          <div class="chat-message received bg-white p-4 rounded-lg ml-2 shadow-sm max-w-[70%]">
+            <span class="text-sm text-gray-800 block break-words">
+              {{ item.content }}
+            </span>
+            <span class="text-right text-gray-400 text-[10px] block mt-1">
+              {{ item.createdDate | date:'shortTime'}}
+            </span>
           </div>
-        }
-        @else {
-          <!-- SENT MESSAGE UI -->
-          <div class="flex flex-row items-center justify-end mb-3">
-            <div class="chat-message bg-blue-600 p-4 rounded-lg mr-2 shadow-sm text-white max-w-[70%]">
-              <span class="text-sm block  break-words">
-                {{ item.content }}
-              </span>
-              <span class="text-right text-gray-200 text-[10px] block mt-1">
-                {{ item.createdDate | date: 'shortTime' }}
-                @if(item.isRead) {
-                  <mat-icon class="text-xs ml-1" style="font-size: 12px; height: 12px; width: 12px;">done_all</mat-icon>
-                } @else {
-                  <mat-icon class="text-xs ml-1" style="font-size: 12px; height: 12px; width: 12px;">done</mat-icon>
-                }
-              </span>
-            </div>
+        </div>
+      }
+      @else {
+        <!-- SENT MESSAGE UI -->
+        <div class="flex flex-row items-center justify-end"
+             [class.mt-1]="isConsecutiveMessage(i)"
+             [class.mb-3]="!isConsecutiveMessage(i)">
+          <div class="chat-message sent bg-blue-600 p-4 rounded-lg mr-2 shadow-sm text-white max-w-[70%]">
+            <span class="text-sm block break-words">
+              {{ item.content }}
+            </span>
+            <span class="text-right text-gray-200 text-[10px] block mt-1">
+              {{ item.createdDate | date: 'shortTime' }}
+              @if(item.isRead) {
+                <mat-icon class="text-xs ml-1" style="font-size: 12px; height: 12px; width: 12px;">done_all</mat-icon>
+              } @else {
+                <mat-icon class="text-xs ml-1" style="font-size: 12px; height: 12px; width: 12px;">done</mat-icon>
+              }
+            </span>
+          </div>
+          @if(!isConsecutiveMessage(i)) {
             <div class="flex items-center justify-center h-10 w-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex-shrink-0">
               <img [src]="authService.currentLoggedUser?.profileImage"
                    [alt]="authService.currentLoggedUser?.fullName" class="rounded-full h-8 w-8" />
             </div>
+          }
+        </div>
+      }
+    }
+    @empty {
+      <div class="flex flex-col items-center justify-center h-full py-10">
+        @if (chatService.isLoading()) {
+          <div class="loading-state flex flex-col items-cente">
+            <mat-spinner diameter="30"></mat-spinner>
+            <p class="text-gray-500 mt-2">Loading messages...</p>
           </div>
         }
-      }
-      @empty {
-        <div class="flex flex-col items-center justify-center h-full">
-          @if (chatService.isLoading()) {
-            <div class="loading-state">
-              <mat-spinner diameter="30"></mat-spinner>
-            </div>
-          }
         
-          @if (!chatService.isLoading() && chatService.chatMessages().length === 0) {
-            <div class="no-messages">
-              No messages yet
-            </div>
-            <p class="text-center text-gray-400 text-sm">Start a conversation!</p>
-          }
-        
-          @for (message of chatService.chatMessages(); track message.id) {
-            <div class="message">
-              <!-- Your message display content -->
-              <div [class.justify-end]="message.senderId === authService.currentLoggedUser?.id"
-                   [class.justify-start]="message.senderId !== authService.currentLoggedUser?.id"
-                   class="flex mb-2">
-                <div [class.bg-blue-500]="message.senderId === authService.currentLoggedUser?.id"
-                     [class.bg-gray-200]="message.senderId !== authService.currentLoggedUser?.id"
-                     class="rounded-lg p-2 max-w-xs">
-                  <p>{{ message.content }}</p>
-                  <p class="text-xs text-right mt-1">
-                    {{ message.createdDate | date:'shortTime' }}
-                  </p>
-                </div>
-              </div>
-            </div>
-          }
-        </div>}
+        @if (!chatService.isLoading() && chatService.chatMessages().length === 0) {
+          <div class="no-messages flex flex-col items-center">
+            <mat-icon class="chat-icon text-gray-400 mb-2">forum</mat-icon>
+            <p class="text-center text-gray-500">No messages yet</p>
+            <p class="text-center text-gray-400 text-sm mt-1">Start a conversation!</p>
+          </div>
+        }
+      </div>
+    }
+    
+    @if (isUserTyping()) {
+      <div class="flex mb-3 flex-row items-center justify-normal">
+        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-gradient-to-r from-green-400 to-blue-500 flex-shrink-0">
+          <img [src]="chatService.currentOpenedChat()?.profileImage" 
+               [alt]="chatService.currentOpenedChat()?.fullName" class="rounded-full h-8 w-8" />
+        </div>
+        <div class="typing-indicator bg-white p-3 rounded-lg ml-2 shadow-sm">
+          <div class="typing-dots flex gap-1">
+            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
