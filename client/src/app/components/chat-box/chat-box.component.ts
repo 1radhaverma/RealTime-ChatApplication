@@ -123,11 +123,11 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked, OnDestroy {
       });
   }
 
-  ngAfterViewChecked() {
+ngAfterViewChecked() {
     this.scrollDebounce$.next();
   }
 
-  ngOnDestroy() {
+   ngOnDestroy() {
     this.destroy$.next();
     this.destroy$.complete();
     this.scrollDebounce$.complete();
@@ -136,11 +136,14 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked, OnDestroy {
   shouldShowDateSeparator(index: number): boolean {
     if (index === 0) return true;
     const messages = this.chatService.chatMessages();
+    if (index >= messages.length) return false;
+    
     const currentDate = new Date(messages[index].createdDate).toDateString();
     const prevDate = new Date(messages[index - 1].createdDate).toDateString();
     return currentDate !== prevDate;
   }
 
+  
   formatMessageDate(date: string): string {
     const messageDate = new Date(date);
     const today = new Date();
@@ -161,7 +164,7 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked, OnDestroy {
     }
   }
 
-  isUserTyping(): boolean {
+   isUserTyping(): boolean {
     const currentChat = this.chatService.currentOpenedChat();
     if (!currentChat) return false;
     
@@ -171,12 +174,12 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked, OnDestroy {
   }
 
   trackByMessageId(index: number, message: Message): number {
-    return message.id;
+    return message.id || index;
   }
 
   isConsecutiveMessage(index: number): boolean {
     const messages = this.chatService.chatMessages();
-    if (index === 0) return false;
+    if (index === 0 || index >= messages.length) return false;
     
     const prevMsg = messages[index - 1];
     const currentMsg = messages[index];
@@ -193,7 +196,7 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked, OnDestroy {
     return element.scrollHeight - element.scrollTop - element.clientHeight < threshold;
   }
 
-  scrollToBottom(behavior: ScrollBehavior = 'auto'): void {
+   scrollToBottom(behavior: ScrollBehavior = 'auto'): void {
     setTimeout(() => {
       if (this.chatBox?.nativeElement) {
         const element = this.chatBox.nativeElement;

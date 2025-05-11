@@ -42,9 +42,7 @@ private authService = inject(AuthService);
       this.startConnection(token, this.authService.currentLoggedUser.id);
     }
   }
-
-  // Cache management
-private loadCacheFromStorage() {
+ private loadCacheFromStorage() {
     const cache = localStorage.getItem('chatMessageCache');
     if (cache) {
       try {
@@ -56,28 +54,24 @@ private loadCacheFromStorage() {
       }
     }
   }
-
-validateCacheForUser(userId: string) {
+  validateCacheForUser(userId: string) {
   const cached = this.messageCache.get(userId);
   if (cached) {
-    // Remove any messages that don't belong to this chat
+    // More lenient validation
     const validMessages = cached.filter(msg => 
-      (msg.senderId === userId || msg.receiverId === userId) &&
-      (msg.senderId === this.authService.currentLoggedUser?.id || 
-       msg.receiverId === this.authService.currentLoggedUser?.id)
+      msg.content && msg.createdDate && 
+      (msg.senderId === userId || msg.receiverId === userId)
     );
     this.messageCache.set(userId, validMessages);
   }
-}
- private saveCacheToStorage() {
+  }
+  private saveCacheToStorage() {
     localStorage.setItem(
       'chatMessageCache',
-      JSON.stringify(Array.from(this.messageCache.entries())))
+      JSON.stringify(Array.from(this.messageCache.entries()))
+    );
   }
-
-  // Chat management
   setCurrentChat(user: User | null) {
-    // Save current messages before switching
     const currentChat = this.currentOpenedChat();
     if (currentChat) {
       this.cacheMessages(currentChat.id, this.chatMessages());
@@ -93,8 +87,8 @@ validateCacheForUser(userId: string) {
       this.chatMessages.set([]);
     }
   }
-private loadChatHistory(userId: string) {
-    // Load from cache first
+  private loadChatHistory(userId: string) {
+    // Load from cache first for instant display
     const cached = this.messageCache.get(userId) || [];
     this.chatMessages.set(cached);
     this.chatMessagesSubject.next();
@@ -111,30 +105,43 @@ private loadChatHistory(userId: string) {
     this.messageCache.set(userId, validMessages);
     this.saveCacheToStorage();
   }
-    async loadAllMessages(userId: string): Promise<void> {
+ async loadAllMessages(userId: string, pageNumber: number = 1): Promise<void> {
     if (!userId || !this.hubConnection) {
-      this.isLoading.set(false);
-      return;
+        this.isLoading.set(false);
+        return;
     }
 
     this.isLoading.set(true);
 
     try {
-      const messages = await this.hubConnection.invoke<Message[]>('LoadAllMessages', userId);
-      const validMessages = messages.filter(msg => 
-        msg.id && !this.loadedMessageIds.has(msg.id)
-      );
+        // Call with both parameters
+        const response = await this.hubConnection.invoke<{ messages: Message[] }>(
+            'LoadMessages', 
+            userId,
+            pageNumber
+        );
 
-      validMessages.forEach(msg => this.loadedMessageIds.add(msg.id));
-      this.chatMessages.set(validMessages);
-      this.cacheMessages(userId, validMessages);
+        if (response && response.messages) {
+            const sortedMessages = response.messages.sort((a, b) => 
+                new Date(a.createdDate).getTime() - new Date(b.createdDate).getTime()
+            );
+            this.chatMessages.set(sortedMessages);
+            this.cacheMessages(userId, sortedMessages);
+        }
     } catch (error) {
-      console.error('Error loading messages:', error);
+        console.error('Error loading messages:', error);
+        // Add more detailed error handling
+        if (error instanceof Error) {
+            console.error('Error details:', {
+                name: error.name,
+                message: error.message,
+                stack: error.stack
+            });
+        }
     } finally {
-      this.isLoading.set(false);
+        this.isLoading.set(false);
     }
-  }
-
+}
   restoreCurrentChat(availableUsers: User[]) {
     const chatId = localStorage.getItem('currentChatId');
     if (chatId) {
@@ -144,8 +151,6 @@ private loadChatHistory(userId: string) {
       }
     }
   }
-
-  // SignalR connection methods
   startConnection(token: string, senderId?: string) {
     this.hubConnection = new HubConnectionBuilder()
       .withUrl(`${this.hubUrl}?senderId=${senderId || ''}`, {
@@ -161,7 +166,6 @@ private loadChatHistory(userId: string) {
 
     this.setupSignalREvents();
   }
-
   private setupSignalREvents() {
     if (!this.hubConnection) return;
 
@@ -181,18 +185,39 @@ private loadChatHistory(userId: string) {
       }
     });
     
-    this.hubConnection.on("ReceiveMessageList", (message) => {
-      this.chatMessages.update(messages => [...message.messages, ...messages]);
+    this.hubConnection.on("ReceiveMessageList", (response: { messages: Message[] }) => {
+      // Merge new messages with existing ones
+      const mergedMessages = [...this.chatMessages(), ...response.messages];
+      
+      // Remove duplicates
+      const uniqueMessages = mergedMessages.filter((msg, index, self) =>
+        index === self.findIndex(m => 
+          m.id === msg.id || 
+          (m.content === msg.content && m.createdDate === msg.createdDate)
+        )
+      );
+      
+      // Sort by date
+      const sortedMessages = uniqueMessages.sort((a, b) => 
+        new Date(a.createdDate).getTime() - new Date(b.createdDate).getTime()
+      );
+
+      this.chatMessages.set(sortedMessages);
       this.chatMessagesSubject.next();
       this.isLoading.set(false);
     });
 
     this.hubConnection.on("ReceiveMessage", (message: Message) => {
-      if (!this.loadedMessageIds.has(message.id)) {
-        this.loadedMessageIds.add(message.id);
-        this.chatMessages.update(messages => [...messages, message]);
-        this.chatMessagesSubject.next();
-      }
+      this.chatMessages.update(messages => {
+        // Check if message already exists
+        const exists = messages.some(m => 
+          m.id === message.id || 
+          (m.content === message.content && m.createdDate === message.createdDate)
+        );
+        
+        return exists ? messages : [...messages, message];
+      });
+      this.chatMessagesSubject.next();
     });
   }
 
@@ -203,23 +228,20 @@ private loadChatHistory(userId: string) {
       )
     );
   }
-
   disconnectConnection() {
     if (this.hubConnection?.state === HubConnectionState.Connected) {
       this.hubConnection.stop().catch(error => console.log(error));
     }
   }
-
-  // Message methods
   sendMessage(message: string) {
-    const newMessage = {
-      content: message,
-      senderId: this.authService.currentLoggedUser!.id,
-      receiverId: this.currentOpenedChat()?.id!,
-      createdDate: new Date().toString(),
-      isRead: false,
-      id: 0,
-    };
+  const newMessage = {
+    content: message,
+    senderId: this.authService.currentLoggedUser!.id,
+    receiverId: this.currentOpenedChat()?.id!,
+    createdDate: new Date().toString(),
+    isRead: false,
+    id: Date.now(), // Use timestamp as temporary ID
+  };
 
     this.chatMessages.update(messages => [...messages, newMessage]);
   
@@ -228,15 +250,12 @@ private loadChatHistory(userId: string) {
       content: message,
     }).catch(error => console.log('Send error:', error));
   }
-
-  // Status methods
   status(userName: string): string {
     if (!this.currentOpenedChat()) return 'offline';
 
     const onlineUser = this.onlineUsers().find(u => u.userName === userName);
     return onlineUser?.isTyping ? 'Typing...' : this.isUserOnline();
   }
-
   isUserOnline(): string {
     const currentChat = this.currentOpenedChat();
     if (!currentChat) return 'offline';
@@ -244,7 +263,6 @@ private loadChatHistory(userId: string) {
     const onlineUser = this.onlineUsers().find(u => u.userName === currentChat.userName);
     return onlineUser?.isOnline ? 'online' : 'offline';
   }
-
   notifyTyping() {
     const currentChat = this.currentOpenedChat();
     if (!currentChat || !this.hubConnection) return;

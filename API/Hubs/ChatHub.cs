@@ -50,51 +50,59 @@ namespace API.Hubs
         }
         public async Task LoadMessages(string recipientId, int pageNumber = 1)
         {
-            int pageSize = 10;
-            var userName = Context.User!.Identity!.Name;
-            var currentUser = await userManager.FindByNameAsync(userName!);
-
-            if (currentUser is null)
+            try
             {
-                return;
-            }
+                int pageSize = 10;
+                var userName = Context.User!.Identity!.Name;
+                var currentUser = await userManager.FindByNameAsync(userName!);
 
-            // Get messages with UTC timestamps
-            var messages = await context.Messages
-                 .Where(x => (x.ReceiverId == currentUser.Id && x.SenderId == recipientId ||
-                  x.SenderId == currentUser!.Id && x.ReceiverId == recipientId))
-                 .OrderByDescending(x => x.CreatedDate) // Consistent ordering
-                 .Skip((pageNumber - 1) * pageSize)
-                 .Take(pageSize)
-                 .Select(x => new MessageRequestDto
-                 {
-                     Id = x.Id,
-                     SenderId = x.SenderId,
-                     ReceiverId = x.ReceiverId,
-                     Content = x.Content,
-                     CreatedDate = x.CreatedDate // ISO 8601 format
-                 })
-                 .ToListAsync();
-
-            // Mark messages as read
-            foreach (var message in messages)
-            {
-                var msg = await context.Messages.FirstOrDefaultAsync(x => x.Id == message.Id);
-                if (msg != null && msg.ReceiverId == currentUser.Id)
+                if (currentUser is null)
                 {
-                    msg.IsRead = true;
-                    await context.SaveChangesAsync();
+                    return;
                 }
-            }
 
-            await Clients.User(currentUser.Id).SendAsync("ReceiveMessageList", new
+                // Get messages with UTC timestamps
+                var messages = await context.Messages
+                     .Where(x => (x.ReceiverId == currentUser.Id && x.SenderId == recipientId ||
+                      x.SenderId == currentUser!.Id && x.ReceiverId == recipientId))
+                     .OrderByDescending(x => x.CreatedDate) // Consistent ordering
+                     .Skip((pageNumber - 1) * pageSize)
+                     .Take(pageSize)
+                     .Select(x => new MessageRequestDto
+                     {
+                         Id = x.Id,
+                         SenderId = x.SenderId,
+                         ReceiverId = x.ReceiverId,
+                         Content = x.Content,
+                         CreatedDate = x.CreatedDate // ISO 8601 format
+                     })
+                     .ToListAsync();
+
+                // Mark messages as read
+                foreach (var message in messages)
+                {
+                    var msg = await context.Messages.FirstOrDefaultAsync(x => x.Id == message.Id);
+                    if (msg != null && msg.ReceiverId == currentUser.Id)
+                    {
+                        msg.IsRead = true;
+                        await context.SaveChangesAsync();
+                    }
+                }
+
+                await Clients.User(currentUser.Id).SendAsync("ReceiveMessageList", new
+                {
+                    messages,
+                    pageNumber,
+                    totalPages = (int)Math.Ceiling(await context.Messages.CountAsync(x =>
+                        (x.ReceiverId == currentUser.Id && x.SenderId == recipientId) ||
+                        (x.SenderId == currentUser.Id && x.ReceiverId == recipientId)) / (double)pageSize)
+                });
+            }
+            catch (Exception ex)
             {
-                messages,
-                pageNumber,
-                totalPages = (int)Math.Ceiling(await context.Messages.CountAsync(x =>
-                    (x.ReceiverId == currentUser.Id && x.SenderId == recipientId) ||
-                    (x.SenderId == currentUser.Id && x.ReceiverId == recipientId)) / (double)pageSize)
-            });
+                // Handle exceptions (e.g., log them)
+                Console.WriteLine($"Error loading messages: {ex.Message}");
+            }
         }
         //public async Task LoadMessages(string recipientId, int pageNumber = 1)
         //{
