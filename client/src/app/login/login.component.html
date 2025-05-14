@@ -21,7 +21,7 @@
         <input matInput [type]="hide()?'text':'password'" required name="password" [(ngModel)]="password"
           #passwordModel="ngModel"
           placeholder="Password"/>
-        <mat-icon (click)="togglePassword($event)" matSuffix class="text-white">
+        <mat-icon (click)="togglePassword($event)" matSuffix class="text-black">
           {{ hide() ? 'visibility_off' : 'visibility' }}
         </mat-icon>
         @if(passwordModel.errors?.['required']){
@@ -37,7 +37,7 @@
       
       <p class="font-bold text-xs text-center text-white">
         Don't have an account? 
-        <a class="text-blue-200 hover:text-white" [routerLink]="'/register'">Register</a>
+        <a class="text-blue-200 hover:text-black" [routerLink]="'/register'">Register</a>
       </p>
     </div>
   </div> 

@@ -61,6 +61,16 @@ builder.Services.AddAuthentication(opt =>
         }
     };
 });
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowClient", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200") // Your Angular app URL
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
 
 builder.Services.AddOpenApi();
 builder.Services.AddSignalR();
@@ -78,6 +88,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
 app.MapHub<ChatHub>("/hubs/chat");
-app.MapAccountEndpoint();   
-
+app.MapHub<VideoChatHub>("/hubs/video");
+app.MapAccountEndpoint();
 app.Run();
