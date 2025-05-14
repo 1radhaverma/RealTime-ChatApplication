@@ -5,6 +5,9 @@ import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { ChatBoxComponent } from "../chat-box/chat-box.component";
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { VideoChatService } from '../../services/video-chat.service';
+import { VideoChatComponent } from '../../video-chat/video-chat.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-chat-window',
@@ -14,9 +17,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ChatWindowComponent {
   @ViewChild('chatBox') chatContainer?:ElementRef;
+  dialog= inject(MatDialog);
   chatService = inject(ChatService);
-message: string = '';
-private snackBar = inject(MatSnackBar);
+  signalRService = inject(VideoChatService);
+  message: string = '';
+  private snackBar = inject(MatSnackBar);
 
 sendMessage() {
   if (!this.message|| this.message.trim() === '') { this.showError('Message cannot be empty');
@@ -43,6 +48,16 @@ private showError(message: string) {
     duration: 3000,
     panelClass: ['error-snackbar']
   });
+}
+displayDialog(receiverId:string){
+this.signalRService.remoteUserId = receiverId;
+
+this.dialog.open(VideoChatComponent,{
+  width:"400px",
+  height:"600px",
+  disableClose:true,
+  autoFocus:false
+})
 }
 }
 
