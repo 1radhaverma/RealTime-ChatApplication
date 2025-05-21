@@ -1,0 +1,49 @@
+@if(chatService.currentOpenedChat()) {
+  <div class="flex flex-col h-full bg-white">
+    <!-- Chat Header - Purple/Blue Gradient -->
+    <div class="flex items-center justify-between p-3 border-b border-gray-200 bg-gradient-to-r from-blue-100 to-blue-300">
+      <div class="flex items-center">
+        <img 
+          [src]="chatService.currentOpenedChat()?.profileImage" 
+          class="h-10 w-10 rounded-full object-cover border-2 border-white" 
+          alt="Profile"
+        >
+        <div class="ml-3">
+          <h2 class="text-sm font-bold text-grey-500">{{ chatService.currentOpenedChat()?.fullName | titlecase }}</h2>
+          <p class="text-xs text-grey/80">{{ chatService.status(chatService.currentOpenedChat()?.userName || '') }}</p>
+        </div>
+      </div>
+       <div class="cursor-pointer hover:text-red-500" (click)="displayDialog(chatService.currentOpenedChat()!.id)">
+        <mat-icon class="cursor-pointer hover:text-red-500 text-sm md:text-base">video_call</mat-icon>
+      </div>
+    </div>
+  
+      <!-- Regular Chat Box -->
+      <app-chat-box class="flex-1 overflow-y-auto bg-gradient-to-b from-indigo-50 to-purple-50"></app-chat-box>
+      
+      <!-- Message Input -->
+      <div class="p-3 border-t border-gray-200 bg-white">
+        <div class="flex items-center">
+          <input 
+            type="text" 
+            (input)="chatService.notifyTyping()" 
+            (keydown.enter)="sendMessage()" 
+            [(ngModel)]="message"
+            class="flex-1 bg-gray-100 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            placeholder="Type your message..." 
+          />
+          <button mat-icon-button class="ml-2 text-blue-600 hover:text-blue-700" (click)="sendMessage()">
+            <mat-icon class="text-sm">send</mat-icon>
+          </button>
+        </div>
+      </div>
+  
+  </div>}
+@else {
+  <div class="flex flex-col items-center justify-center h-full bg-gradient-to-br from-blue-100 to-blue-600 p-4">
+    <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-8">
+      <h2 class="text-xl font-bold text-white mb-2">Konvo Web App</h2>
+      <p class="text-white/80 text-sm">Why don't you start Konvo with your friends🤷‍♂️</p>
+    </div>
+  </div>
+}

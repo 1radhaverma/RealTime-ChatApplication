@@ -1,0 +1,8 @@
+::ng-deep .mat-input-element {
+  color: #1f2937 !important; /* This is the hex for gray-800 */
+}
+
+/* For the placeholder */
+::ng-deep .mat-input-element::placeholder {
+  color: #9ca3af !important; /* gray-400 for placeholder */
+}

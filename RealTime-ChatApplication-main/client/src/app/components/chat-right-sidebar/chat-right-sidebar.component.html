@@ -1,0 +1,32 @@
+<div *ngIf="chatService.currentOpenedChat()" 
+     class="min-h-screen p-2 sm:p-3 md:p-4 bg-gradient-to-r from-blue-100 to-blue-300">
+  
+  <!-- Profile Section -->
+  <div class="flex flex-row md:flex-col items-center md:text-center md:items-center">
+    <!-- Profile Image -->
+    <img
+      class="rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-32 lg:h-32 xl:w-44 xl:h-44 object-cover md:mb-2 lg:mb-3 xl:mb-4 border-2 border-white/50"
+      [src]="chatService.currentOpenedChat()?.profileImage"
+      alt="profile pic"
+    />
+    
+    <!-- User Info -->
+    <div class="ml-2 md:ml-0 md:text-center">
+      <p class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis max-w-[120px] sm:max-w-[180px] md:max-w-none">
+        {{ chatService.currentOpenedChat()?.fullName | titlecase }}
+      </p>
+      <p class="text-xs sm:text-sm md:text-base text-white/80 whitespace-nowrap overflow-hidden text-ellipsis max-w-[120px] sm:max-w-[180px] md:max-w-none">
+        {{ chatService.currentOpenedChat()?.userName }}
+      </p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="mt-4 md:mt-6 lg:mt-8 ">
+    <h3 class="text-sm sm:text-base md:text-lg font-bold mb-2">Contact</h3>
+  <div class="p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+       <p class="text-xs sm:text-sm">Full Name: {{ chatService.currentOpenedChat()?.fullName }}</p>
+        <p class="text-xs sm:text-sm">User Name: {{ chatService.currentOpenedChat()?.userName }}</p>
+    </div>
+  </div>
+</div>

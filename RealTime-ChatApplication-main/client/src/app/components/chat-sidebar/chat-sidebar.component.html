@@ -1,0 +1,102 @@
+<div class="flex flex-col h-full bg-gradient-to-r from-blue-100 to-blue-300">
+  <!-- Header -->
+  <div class="p-4 border-b border-gray-200">
+    <h1 class="text-xl font-bold text-gray-800">Contacts</h1>
+  </div>
+  
+  <!-- Search -->
+  <div class="p-3 border-b border-gray-200">
+    <div class="relative">
+      <input 
+        [(ngModel)]="searchQuery"
+        placeholder="Search users..." 
+        type="text" 
+        class="w-full pl-8 pr-4 py-2 bg-gray-100 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 text-sm"
+      />
+      <mat-icon class="absolute left-2 top-2.5 text-grey-400 text-sm">search</mat-icon>
+    </div>
+  </div>
+  
+  <!-- User List -->
+  <div class="flex-1 overflow-y-auto">
+    @for (user of filterUsers(); track user.id) {
+      <div 
+       (click)="openChatWindow(user)"
+  class="flex items-center p-3 border-b border-gray-100 hover:bg-gray-50 cursor-pointer transition-colors"
+  [class]="{
+    'bg-gradient-to-r from-blue-100/60 to-purple-100/60 backdrop-blur-sm': 
+      chatService.currentOpenedChat()?.id === user.id
+  }"
+      >
+        <div class="relative">
+          <img 
+            [src]="user.profileImage || 'assets/default-profile.png'" 
+            class="h-10 w-10 rounded-full object-cover" 
+            alt="User profile"
+          >
+          <div 
+            class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full border border-white"
+            [class.bg-green-500]="user.isOnline"
+            [class.bg-gray-300]="!user.isOnline"
+          ></div>
+        </div>
+        
+        <div class="ml-3 flex-1 min-w-0">
+          <div class="flex justify-between items-center">
+            <span class="text-sm font-medium text-gray-800 truncate">
+              {{ user.fullName | titlecase }}
+            </span>
+            <span class="text-xs text-gray-400">
+              {{ user.lastMessage | date:'shortTime' }}
+            </span>
+          </div>
+          
+          <div class="flex justify-between items-center mt-1">
+            <p class="text-xs text-gray-500 truncate">
+              @if (user.isTyping) {
+                <app-typing-indicator></app-typing-indicator>
+              } @else {
+                {{ user.lastMessage || '' }}
+              }
+            </p>
+            
+            @if (user.unreadCount && user.unreadCount > 0) {
+              <span class="bg-blue-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                {{ user.unreadCount }}
+              </span>
+            }
+          </div>
+        </div>
+      </div>
+    } @empty {
+      <div class="text-center py-8 text-gray-500 text-sm">
+        No contacts found
+      </div>
+    }
+  </div>
+  
+  <!-- User Profile -->
+  <div class="p-3 border-t border-gray-200">
+    <div class="flex items-center">
+      <img 
+        [src]="authService.currentLoggedUser?.profileImage || 'assets/default-profile.png'" 
+        class="h-8 w-8 rounded-full object-cover" 
+        alt="Profile"
+      >
+      <div class="ml-2">
+        <p class="text-sm font-medium text-gray-800">{{ authService.currentLoggedUser?.fullName | titlecase }}</p>
+        <p class="text-xs text-gray-500">Online</p>
+      </div>
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="ml-auto">
+        <mat-icon class="text-gray-500 text-sm">more_vert</mat-icon>
+      </button>
+      
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>logout</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>

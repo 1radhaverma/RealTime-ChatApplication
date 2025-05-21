@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6"
+  },
+  "dependencies": {
+    "@types/peerjs": "^0.0.30",
+    "@types/webrtc": "^0.0.46",
+    "peerjs": "^1.5.4",
+    "socket.io-client": "^4.8.1"
+  }
+}

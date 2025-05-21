@@ -1,0 +1,9 @@
+/* Force text color to gray-400 (Tailwind's #9CA3AF) */
+.mat-mdc-input-element {
+  color: #9CA3AF !important;
+}
+
+/* Optional: Change placeholder color */
+.mat-mdc-form-field .mdc-text-field__input::placeholder {
+  color: #9CA3AF !important;
+}
