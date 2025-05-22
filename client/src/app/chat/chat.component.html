@@ -1,0 +1,14 @@
+<div class="flex flex-col md:flex-row h-screen w-screen bg-gray-100">
+    <!-- Left sidebar - remains visible on medium+ screens -->
+    <app-chat-sidebar class="bg-white border-r w-full md:w-1/3 lg:w-1/5 h-full overflow-y-auto"></app-chat-sidebar>
+    
+    <!-- Main chat window - takes remaining space -->
+    <div class="flex-1 min-w-0 h-full flex flex-col">
+      <app-chat-window class="flex-1 overflow-hidden"></app-chat-window>
+    </div>
+  
+    <!-- Right sidebar - hidden on smaller screens -->
+    <div class="bg-gray-50 border-l hidden lg:block lg:w-3/20 h-full overflow-y-auto">
+      <app-chat-right-sidebar></app-chat-right-sidebar>
+    </div>
+</div>

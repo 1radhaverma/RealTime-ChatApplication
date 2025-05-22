@@ -1,0 +1,20 @@
+<div *ngIf="chatService.currentOpenedChat()" class="p-2 sm:p-3 md:p-4">
+  <!-- Mobile Horizontal Layout -->
+  <div class="flex flex-row md:flex-col items-center md:text-center md:items-center">
+    <!-- Profile Image - Smaller on mobile -->
+    <img
+      class="rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-32 lg:h-32 xl:w-44 xl:h-44 object-cover md:mb-2 lg:mb-3 xl:mb-4"
+      [src]="chatService.currentOpenedChat()?.profileImage"
+      alt="profile pic"
+    />
+    
+    <!-- User Info - Stacked horizontally on mobile -->
+    <div class="ml-2 md:ml-0 md:text-center">
+      <p class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis max-w-[120px] sm:max-w-[180px] md:max-w-none">
+        {{ chatService.currentOpenedChat()?.fullName | titlecase }}
+      </p>
+      <p class="text-xs sm:text-sm md:text-base text-gray-500 whitespace-nowrap overflow-hidden text-ellipsis max-w-[120px] sm:max-w-[180px] md:max-w-none">
+        {{ chatService.currentOpenedChat()?.userName }}
+      </p>
+    </div>
+  </div>

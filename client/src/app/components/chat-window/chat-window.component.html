@@ -1,0 +1,48 @@
+@if(chatService.currentOpenedChat()){
+  <div class="relative flex flex-col w-full h-full">
+    <!-- Chat Header -->
+    <div class="chat-header flex justify-between items-center border-b bg-white p-2 md:p-4">
+      <div class="truncate max-w-[70%]">
+        <span class="font-bold leading-normal text-sm md:text-base">
+          {{ chatService.currentOpenedChat()?.fullName | titlecase }}
+        </span>
+        <br/>
+        <span class="text-gray-400 text-xs md:text-sm font-bold">
+          {{ chatService.status(chatService.currentOpenedChat()?.userName || '') }}
+        </span>
+      </div> 
+      <div class="cursor-pointer hover:text-red-500" (click)="displayDialog(chatService.currentOpenedChat()!.id)">
+        <mat-icon class="cursor-pointer hover:text-red-500 text-sm md:text-base">video_call</mat-icon>
+      </div>
+    </div> 
+    
+    <!-- Combined Chat Box and Message Input -->
+    <div class="flex flex flex-col bg-white ">
+      <!-- Chat Box takes available space -->
+      <app-chat-box class="flex-10 overflow-auto mb-5"></app-chat-box>
+      
+      <!-- Message Input - now directly connected -->
+      <div class="flex items-center bg-white p-10 md:p-10">
+        <input 
+          type="text" 
+          (input)="chatService.notifyTyping()" 
+          (keydown.enter)="sendMessage()" 
+          [(ngModel)]="message"
+          class="w-full bg-gray-200 focus:outline-none text-gray-900 border rounded-full px-3 md:px-6 py-1 md:py-2 text-sm md:text-base"
+          placeholder="Type message..." 
+        />
+        <mat-icon 
+          (click)="sendMessage()" 
+          class="ml-2 md:ml-5 cursor-pointer hover:text-blue-900 text-sm md:text-base"
+        >
+          send
+        </mat-icon>
+      </div>
+    </div>
+  </div>
+}
+@else{
+  <div class="flex flex-col items-center justify-center p-4 h-full">
+    <img src="..\chating.svg" class="w-3/4 md:w-1/2 lg:w-1/3"/>
+  </div>
+}
