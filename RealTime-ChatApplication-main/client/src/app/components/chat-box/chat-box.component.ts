@@ -1,6 +1,7 @@
 import { AfterViewChecked, Component, ElementRef, ViewChild, 
   ChangeDetectorRef, OnDestroy, DestroyRef, inject,  
-  OnInit} from '@angular/core';
+  OnInit,
+  HostListener} from '@angular/core';
 import { ChatService } from '../../services/chat.service';
 import {MatProgressSpinner} from "@angular/material/progress-spinner";
 import { AuthService } from '../../services/auth.service';
@@ -28,6 +29,35 @@ import { Message } from '../../models/message';
       border-radius: 5px;
       overflow-y: scroll;
     }
+       .message-bubble {
+  transition: all 0.2s ease;
+}
+
+.message-bubble:hover {
+  transform: scale(1.02);
+}
+
+.dropdown-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.2s ease;
+}
+
+.dropdown-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-leave-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+}
     .no-messages {
       animation: fadeIn 0.3s ease-in;
     }
@@ -91,6 +121,7 @@ import { Message } from '../../models/message';
       border-bottom: 1px solid #ddd;
       margin: 0 0.5rem;
     }
+ 
   `],
   standalone: true
 })
@@ -98,7 +129,8 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked, OnDestroy {
   @ViewChild('chatBox', { static: false }) chatBox?: ElementRef;
   private destroy$ = new Subject<void>();
   private scrollDebounce$ = new Subject<void>();
-
+  activeDropdown: number | null = null;
+  deletingMessageId: number | null = null;
   constructor(
     public chatService: ChatService,
     public authService: AuthService,
@@ -122,6 +154,7 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked, OnDestroy {
         this.scrollDebounce$.next();
       });
   }
+// Temporarily add this to your toggleDropdown method
 
 ngAfterViewChecked() {
     this.scrollDebounce$.next();
@@ -163,7 +196,25 @@ ngAfterViewChecked() {
       });
     }
   }
+  toggleDropdown(messageId: number, event: MouseEvent) {
+  event.stopPropagation();
+  this.activeDropdown = this.activeDropdown === messageId ? null : messageId;
+}
 
+unsendMessage(messageId: number, event: MouseEvent) {
+  event.stopPropagation();
+  this.chatService.unsendMessage(messageId).then(() => {
+    this.activeDropdown = null;
+  });
+}
+
+@HostListener('document:click', ['$event'])
+onDocumentClick(event: MouseEvent) {
+  if (this.activeDropdown !== null) {
+    this.activeDropdown = null;
+    this.cdRef.detectChanges();
+  }
+}
    isUserTyping(): boolean {
     const currentChat = this.chatService.currentOpenedChat();
     if (!currentChat) return false;

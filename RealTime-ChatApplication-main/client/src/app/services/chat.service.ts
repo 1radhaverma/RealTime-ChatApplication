@@ -19,7 +19,7 @@ private authService = inject(AuthService);
   chatMessages = signal<Message[]>([]);
   isLoading = signal<boolean>(true);
   autoScrollEnabled = signal<boolean>(true);
-  
+  private pendingMessages = new Map<number, Message>(); 
   // Private properties
   private messageCache = new Map<string, Message[]>();
   private hubConnection?: HubConnection;
@@ -42,6 +42,14 @@ private authService = inject(AuthService);
       this.startConnection(token, this.authService.currentLoggedUser.id);
     }
   }
+  getDisplayMessages(): Message[] {
+  // Combine cached messages with pending messages that have been confirmed
+  const dbMessages = this.chatMessages();
+  const confirmedPending = Array.from(this.pendingMessages.values())
+    .filter(msg => msg.status === 'confirmed');
+  
+  return [...dbMessages, ...confirmedPending];
+}
  private loadCacheFromStorage() {
     const cache = localStorage.getItem('chatMessageCache');
     if (cache) {
@@ -54,6 +62,32 @@ private authService = inject(AuthService);
       }
     }
   }
+   async unsendMessage(messageId: number): Promise<void> {
+  try {
+    if (this.hubConnection?.state === HubConnectionState.Connected) {
+      await this.hubConnection.invoke('UnsendMessage', messageId);
+      
+      // Update local state immediately
+      this.chatMessages.update(messages => 
+        messages.filter(msg => msg.id !== messageId)
+      );
+      
+      // Update cache if needed
+      const currentChatId = this.currentOpenedChat()?.id;
+      if (currentChatId) {
+        const cached = this.messageCache.get(currentChatId) || [];
+        this.messageCache.set(
+          currentChatId, 
+          cached.filter(msg => msg.id !== messageId)
+        );
+        this.saveCacheToStorage();
+      }
+    }
+  } catch (error) {
+    console.error('Error unsending message:', error);
+    throw error;
+  }
+}
   validateCacheForUser(userId: string) {
   const cached = this.messageCache.get(userId);
   if (cached) {
@@ -219,7 +253,14 @@ private authService = inject(AuthService);
       });
       this.chatMessagesSubject.next();
     });
+    this.hubConnection?.on("MessageDeleted", (messageId: number) => {
+      this.chatMessages.update(messages => 
+        messages.filter(msg => msg.id !== messageId)
+      );
+      this.chatMessagesSubject.next();
+    });
   }
+  
 
   private updateUserTypingStatus(userName: string, isTyping: boolean) {
     this.onlineUsers.update(users => 
@@ -233,23 +274,61 @@ private authService = inject(AuthService);
       this.hubConnection.stop().catch(error => console.log(error));
     }
   }
-  sendMessage(message: string) {
-  const newMessage = {
-    content: message,
+  async sendMessage(content: string): Promise<void> {
+  const tempId = Date.now();
+  const newMessage: Message = {
+    id: tempId,
+    content,
     senderId: this.authService.currentLoggedUser!.id,
     receiverId: this.currentOpenedChat()?.id!,
-    createdDate: new Date().toString(),
+    createdDate: new Date().toISOString(),
     isRead: false,
-    id: Date.now(), // Use timestamp as temporary ID
+    status: 'pending' // Track message state
   };
 
-    this.chatMessages.update(messages => [...messages, newMessage]);
-  
-    this.hubConnection?.invoke('SendMessage', {
-      receiverId: this.currentOpenedChat()?.id,
-      content: message,
-    }).catch(error => console.log('Send error:', error));
+  // Add to pending messages
+  this.pendingMessages.set(tempId, newMessage);
+  this.chatMessagesSubject.next();
+
+  try {
+    const response = await this.hubConnection?.invoke<{message: Message, tempId: number}>(
+      'SendMessage', 
+      {
+        receiverId: this.currentOpenedChat()?.id,
+        content,
+        tempId
+      }
+    );
+
+    if (response) {
+      // Update status to confirmed and replace temp ID with real ID
+      this.pendingMessages.set(tempId, {
+        ...newMessage,
+        id: response.message.id,
+        status: 'confirmed'
+      });
+    }
+  } catch (error) {
+    // Mark as failed if sending fails
+    this.pendingMessages.set(tempId, {
+      ...newMessage,
+      status: 'failed'
+    });
+  } finally {
+    this.chatMessagesSubject.next();
   }
+}
+cleanUpFailedMessages() {
+  // Remove messages that failed to send after some time
+  Array.from(this.pendingMessages.entries()).forEach(([id, msg]) => {
+    if (msg.status === 'failed') {
+      setTimeout(() => {
+        this.pendingMessages.delete(id);
+        this.chatMessagesSubject.next();
+      }, 5000); // Remove after 5 seconds
+    }
+  });
+}
   status(userName: string): string {
     if (!this.currentOpenedChat()) return 'offline';
 

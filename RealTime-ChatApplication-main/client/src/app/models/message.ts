@@ -5,4 +5,6 @@ export interface Message{
     content: string | null;
     createdDate: string;
     isRead:boolean;
+    status?: 'pending' | 'confirmed' | 'failed';
+    
 }

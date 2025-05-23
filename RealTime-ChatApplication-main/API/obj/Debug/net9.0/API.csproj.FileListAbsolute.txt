@@ -313,3 +313,4 @@ E:\OMEN\Chat-Application\RealTime-ChatApplication-main\RealTime-ChatApplication-
 E:\OMEN\Chat-Application\RealTime-ChatApplication-main\RealTime-ChatApplication-main\API\obj\Debug\net9.0\API.pdb
 E:\OMEN\Chat-Application\RealTime-ChatApplication-main\RealTime-ChatApplication-main\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 E:\OMEN\Chat-Application\RealTime-ChatApplication-main\RealTime-ChatApplication-main\API\obj\Debug\net9.0\ref\API.dll
+E:\OMEN\Chat-Application\RealTime-ChatApplication-main\RealTime-ChatApplication-main\API\obj\Debug\net9.0\API.sourcelink.json
