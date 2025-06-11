@@ -149,19 +149,54 @@ namespace API.Hubs
         //}
         public async Task SendMessage(MessageRequestDto message)
         {
-            var senderId = Context.User!.Identity!.Name;
-            var recipientId = message.ReceiverId;
-            var newMsg = new Message
+            try
             {
-                Sender = await userManager.FindByNameAsync(senderId!),
-                Receiver = await userManager.FindByIdAsync(recipientId!),
-                Content = message.Content,
-                CreatedDate = DateTime.UtcNow,
-                IsRead = false
-            };
-            context.Messages.Add(newMsg);
-            await context.SaveChangesAsync();
-            await Clients.User(recipientId).SendAsync("ReceiveMessage", newMsg);
+                var senderUserName = Context.User!.Identity!.Name;
+                var sender = await userManager.FindByNameAsync(senderUserName!);
+                var receiver = await userManager.FindByIdAsync(message.ReceiverId!);
+
+                if (sender == null || receiver == null)
+                {
+                    Console.WriteLine("Sender or receiver not found");
+                    return;
+                }
+
+                var newMsg = new Message
+                {
+                    SenderId = sender.Id,
+                    ReceiverId = receiver.Id,
+                    Content = message.Content,
+                    CreatedDate = DateTime.UtcNow,
+                    IsRead = false
+                };
+
+                context.Messages.Add(newMsg);
+                await context.SaveChangesAsync();
+
+                // Create a clean DTO for sending
+                var messageDto = new
+                {
+                    Id = newMsg.Id,
+                    SenderId = newMsg.SenderId,
+                    ReceiverId = newMsg.ReceiverId,
+                    Content = newMsg.Content,
+                    CreatedDate = newMsg.CreatedDate.ToString("o"),
+                    IsRead = newMsg.IsRead
+                };
+
+                // Send to receiver
+                await Clients.User(receiver.Id).SendAsync("ReceiveMessage", messageDto);
+
+                // Also send to sender to ensure both clients have the message
+                await Clients.User(sender.Id).SendAsync("ReceiveMessage", messageDto);
+
+                Console.WriteLine($"Message sent from {sender.Id} to {receiver.Id}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error sending message: {ex.Message}");
+                throw;
+            }
         }
         public async Task NotifyTyping(string recipientUserName)
         {

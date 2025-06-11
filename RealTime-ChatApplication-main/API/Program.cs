@@ -22,7 +22,10 @@ var JWTSetting = builder.Configuration.GetSection("JWTSettings");
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlite("Data Source=chat.db"));
+builder.Services.AddDbContext<AppDbContext>(x =>
+    x.UseSqlite("Data Source=chat.db")
+     .LogTo(Console.WriteLine, LogLevel.Information) // Add logging
+     .EnableSensitiveDataLogging()); // For debugging
 
 builder.Services.AddIdentityCore<AppUser>()
     .AddEntityFrameworkStores<AppDbContext>()

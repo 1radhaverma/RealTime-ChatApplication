@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\API.csproj": {}
+    "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\API.csproj": {}
   },
   "projects": {
-    "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\API.csproj": {
+    "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\API.csproj",
+        "projectPath": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\API.csproj",
         "packagesPath": "C:\\Users\\OMEN\\.nuget\\packages\\",
-        "outputPath": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\obj\\",
+        "outputPath": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

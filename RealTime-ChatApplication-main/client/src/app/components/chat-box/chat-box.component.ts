@@ -10,10 +10,15 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged, filter, takeUntil } from 'rxjs/operators'; 
 import { Message } from '../../models/message';
+import { PickerComponent } from '@ctrl/ngx-emoji-mart';
+
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 
 @Component({
   selector: 'app-chat-box',
-  imports: [MatProgressSpinner, DatePipe, MatIconModule],
+  imports: [MatProgressSpinner, DatePipe, MatIconModule,PickerComponent ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './chat-box.component.html',
   styles: [`
 .chat-box {
@@ -91,6 +96,7 @@ import { Message } from '../../models/message';
       border-bottom: 1px solid #ddd;
       margin: 0 0.5rem;
     }
+     
   `],
   standalone: true
 })
@@ -98,7 +104,7 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked, OnDestroy {
   @ViewChild('chatBox', { static: false }) chatBox?: ElementRef;
   private destroy$ = new Subject<void>();
   private scrollDebounce$ = new Subject<void>();
-
+  
   constructor(
     public chatService: ChatService,
     public authService: AuthService,
@@ -150,9 +156,14 @@ ngAfterViewChecked() {
     const yesterday = new Date(today);
     yesterday.setDate(yesterday.getDate() - 1);
 
-    if (messageDate.toDateString() === today.toDateString()) {
+    // Normalize dates to midnight for comparison
+    const normalizedMsgDate = new Date(messageDate.getFullYear(), messageDate.getMonth(), messageDate.getDate());
+    const normalizedToday = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    const normalizedYesterday = new Date(yesterday.getFullYear(), yesterday.getMonth(), yesterday.getDate());
+
+    if (normalizedMsgDate.getTime() === normalizedToday.getTime()) {
       return 'Today';
-    } else if (messageDate.toDateString() === yesterday.toDateString()) {
+    } else if (normalizedMsgDate.getTime() === normalizedYesterday.getTime()) {
       return 'Yesterday';
     } else {
       return messageDate.toLocaleDateString('en-US', { 
@@ -162,7 +173,7 @@ ngAfterViewChecked() {
         day: 'numeric' 
       });
     }
-  }
+}
 
    isUserTyping(): boolean {
     const currentChat = this.chatService.currentOpenedChat();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OK4k3lNmCQRB/HoJQUuiAf4+jTW5XwDj9XotIPh52QU=",
+  "Hash": "hBGcaAbt8E4tK2/yPLAH4TEPHoqTxQmPD43TjsUMwWs=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "API\\wwwroot",
       "Source": "API",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\0b433136-4b82-462a-8c8f-9c9524c8a94e.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\0b433136-4b82-462a-8c8f-9c9524c8a94e.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/0b433136-4b82-462a-8c8f-9c9524c8a94e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\0b433136-4b82-462a-8c8f-9c9524c8a94e.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/312cda27-aa78-403a-aa05-f78762f64426#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\314da41c-ac18-42d1-9d88-703ecfded0f9.png",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\314da41c-ac18-42d1-9d88-703ecfded0f9.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/314da41c-ac18-42d1-9d88-703ecfded0f9#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\314da41c-ac18-42d1-9d88-703ecfded0f9.png"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/37cafe91-d491-463b-83b7-4e560494167b#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/67225c8f-6f92-4572-a609-0c2bf230a8b0#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\82867be0-4984-4eca-8187-8a6c27a1ae03.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\82867be0-4984-4eca-8187-8a6c27a1ae03.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/82867be0-4984-4eca-8187-8a6c27a1ae03#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\82867be0-4984-4eca-8187-8a6c27a1ae03.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8d2453dc-c991-4425-8a98-6cd2305d1796.png",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8d2453dc-c991-4425-8a98-6cd2305d1796.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/8d2453dc-c991-4425-8a98-6cd2305d1796#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8d2453dc-c991-4425-8a98-6cd2305d1796.png"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/8dab563b-22e6-4d11-9eeb-765b75d93c4f#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/9dcf80c9-8066-4a18-97de-91fe72c03afb#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a006cf69-d44e-41db-acd9-90af25f04683.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a006cf69-d44e-41db-acd9-90af25f04683.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/a006cf69-d44e-41db-acd9-90af25f04683#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\a006cf69-d44e-41db-acd9-90af25f04683.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/a7963e62-4386-4bb2-b47f-b20a3e59f5e7#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b77c6a86-8592-4954-b20e-1da67305fda3.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b77c6a86-8592-4954-b20e-1da67305fda3.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/b77c6a86-8592-4954-b20e-1da67305fda3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\b77c6a86-8592-4954-b20e-1da67305fda3.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/bc5a4851-e674-447e-a07c-9c35601b67da#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\cb85140f-8a34-4d08-b9da-8c33782e6636.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\cb85140f-8a34-4d08-b9da-8c33782e6636.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/cb85140f-8a34-4d08-b9da-8c33782e6636#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\cb85140f-8a34-4d08-b9da-8c33782e6636.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/dc3c11b7-59b8-4641-a4fa-d941e2656091#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/e30f4ab3-9cd4-49e1-8956-a589830abd3f#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/efacaefe-1f4f-4dc2-810d-903d96216607#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg"
     },
     {
-      "Identity": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
+      "Identity": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/fa56d1af-e97c-4b2e-93f0-44f6357366f8#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -419,7 +419,7 @@
   "Endpoints": [
     {
       "Route": "uploads/0b433136-4b82-462a-8c8f-9c9524c8a94e.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\0b433136-4b82-462a-8c8f-9c9524c8a94e.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\0b433136-4b82-462a-8c8f-9c9524c8a94e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -440,7 +440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -456,7 +456,7 @@
     },
     {
       "Route": "uploads/0b433136-4b82-462a-8c8f-9c9524c8a94e.pzne8aemk5.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\0b433136-4b82-462a-8c8f-9c9524c8a94e.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\0b433136-4b82-462a-8c8f-9c9524c8a94e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -477,7 +477,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -501,7 +501,7 @@
     },
     {
       "Route": "uploads/1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.h881oj8mcy.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -522,7 +522,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -546,7 +546,7 @@
     },
     {
       "Route": "uploads/1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -567,7 +567,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -583,7 +583,7 @@
     },
     {
       "Route": "uploads/312cda27-aa78-403a-aa05-f78762f64426.7dy64kqs5j.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -604,7 +604,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -628,7 +628,7 @@
     },
     {
       "Route": "uploads/312cda27-aa78-403a-aa05-f78762f64426.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -649,7 +649,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -665,7 +665,7 @@
     },
     {
       "Route": "uploads/314da41c-ac18-42d1-9d88-703ecfded0f9.5uxlijxx6z.png",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\314da41c-ac18-42d1-9d88-703ecfded0f9.png",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\314da41c-ac18-42d1-9d88-703ecfded0f9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -686,7 +686,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -710,7 +710,7 @@
     },
     {
       "Route": "uploads/314da41c-ac18-42d1-9d88-703ecfded0f9.png",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\314da41c-ac18-42d1-9d88-703ecfded0f9.png",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\314da41c-ac18-42d1-9d88-703ecfded0f9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -731,7 +731,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -747,7 +747,7 @@
     },
     {
       "Route": "uploads/37cafe91-d491-463b-83b7-4e560494167b.5kgvka4s16.png",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -768,7 +768,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -792,7 +792,7 @@
     },
     {
       "Route": "uploads/37cafe91-d491-463b-83b7-4e560494167b.png",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -813,7 +813,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -829,7 +829,7 @@
     },
     {
       "Route": "uploads/67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -850,7 +850,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -866,7 +866,7 @@
     },
     {
       "Route": "uploads/67225c8f-6f92-4572-a609-0c2bf230a8b0.tmht6di4m4.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -887,7 +887,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -911,7 +911,7 @@
     },
     {
       "Route": "uploads/82867be0-4984-4eca-8187-8a6c27a1ae03.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\82867be0-4984-4eca-8187-8a6c27a1ae03.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\82867be0-4984-4eca-8187-8a6c27a1ae03.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -932,7 +932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -948,7 +948,7 @@
     },
     {
       "Route": "uploads/82867be0-4984-4eca-8187-8a6c27a1ae03.pzne8aemk5.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\82867be0-4984-4eca-8187-8a6c27a1ae03.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\82867be0-4984-4eca-8187-8a6c27a1ae03.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -969,7 +969,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -993,7 +993,7 @@
     },
     {
       "Route": "uploads/8d2453dc-c991-4425-8a98-6cd2305d1796.png",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8d2453dc-c991-4425-8a98-6cd2305d1796.png",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8d2453dc-c991-4425-8a98-6cd2305d1796.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1014,7 +1014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1030,7 +1030,7 @@
     },
     {
       "Route": "uploads/8d2453dc-c991-4425-8a98-6cd2305d1796.vub0bgayvh.png",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8d2453dc-c991-4425-8a98-6cd2305d1796.png",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8d2453dc-c991-4425-8a98-6cd2305d1796.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1051,7 +1051,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1075,7 +1075,7 @@
     },
     {
       "Route": "uploads/8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1096,7 +1096,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1112,7 +1112,7 @@
     },
     {
       "Route": "uploads/8dab563b-22e6-4d11-9eeb-765b75d93c4f.pzne8aemk5.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1133,7 +1133,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1157,7 +1157,7 @@
     },
     {
       "Route": "uploads/9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1178,7 +1178,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1194,7 +1194,7 @@
     },
     {
       "Route": "uploads/9dcf80c9-8066-4a18-97de-91fe72c03afb.un5up65nek.png",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1215,7 +1215,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1239,7 +1239,7 @@
     },
     {
       "Route": "uploads/a006cf69-d44e-41db-acd9-90af25f04683.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a006cf69-d44e-41db-acd9-90af25f04683.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a006cf69-d44e-41db-acd9-90af25f04683.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1260,7 +1260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1276,7 +1276,7 @@
     },
     {
       "Route": "uploads/a006cf69-d44e-41db-acd9-90af25f04683.pzne8aemk5.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a006cf69-d44e-41db-acd9-90af25f04683.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a006cf69-d44e-41db-acd9-90af25f04683.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1297,7 +1297,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1321,7 +1321,7 @@
     },
     {
       "Route": "uploads/a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1342,7 +1342,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1358,7 +1358,7 @@
     },
     {
       "Route": "uploads/a7963e62-4386-4bb2-b47f-b20a3e59f5e7.khf0djnkib.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1379,7 +1379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1403,7 +1403,7 @@
     },
     {
       "Route": "uploads/b77c6a86-8592-4954-b20e-1da67305fda3.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b77c6a86-8592-4954-b20e-1da67305fda3.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b77c6a86-8592-4954-b20e-1da67305fda3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1424,7 +1424,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1440,7 +1440,7 @@
     },
     {
       "Route": "uploads/b77c6a86-8592-4954-b20e-1da67305fda3.khf0djnkib.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b77c6a86-8592-4954-b20e-1da67305fda3.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b77c6a86-8592-4954-b20e-1da67305fda3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1461,7 +1461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1485,7 +1485,7 @@
     },
     {
       "Route": "uploads/bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1506,7 +1506,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1522,7 +1522,7 @@
     },
     {
       "Route": "uploads/bc5a4851-e674-447e-a07c-9c35601b67da.tmht6di4m4.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\bc5a4851-e674-447e-a07c-9c35601b67da.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1543,7 +1543,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1567,7 +1567,7 @@
     },
     {
       "Route": "uploads/cb85140f-8a34-4d08-b9da-8c33782e6636.70udrw8b0k.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\cb85140f-8a34-4d08-b9da-8c33782e6636.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\cb85140f-8a34-4d08-b9da-8c33782e6636.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1588,7 +1588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1612,7 +1612,7 @@
     },
     {
       "Route": "uploads/cb85140f-8a34-4d08-b9da-8c33782e6636.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\cb85140f-8a34-4d08-b9da-8c33782e6636.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\cb85140f-8a34-4d08-b9da-8c33782e6636.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1633,7 +1633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1649,7 +1649,7 @@
     },
     {
       "Route": "uploads/dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1670,7 +1670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1686,7 +1686,7 @@
     },
     {
       "Route": "uploads/dc3c11b7-59b8-4641-a4fa-d941e2656091.tmht6di4m4.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\dc3c11b7-59b8-4641-a4fa-d941e2656091.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1707,7 +1707,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1731,7 +1731,7 @@
     },
     {
       "Route": "uploads/e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1752,7 +1752,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1768,7 +1768,7 @@
     },
     {
       "Route": "uploads/e30f4ab3-9cd4-49e1-8956-a589830abd3f.khf0djnkib.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1789,7 +1789,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1813,7 +1813,7 @@
     },
     {
       "Route": "uploads/efacaefe-1f4f-4dc2-810d-903d96216607.4t7b05v6jr.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1834,7 +1834,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1858,7 +1858,7 @@
     },
     {
       "Route": "uploads/efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1879,7 +1879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1895,7 +1895,7 @@
     },
     {
       "Route": "uploads/fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1916,7 +1916,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1932,7 +1932,7 @@
     },
     {
       "Route": "uploads/fa56d1af-e97c-4b2e-93f0-44f6357366f8.khf0djnkib.jpg",
-      "AssetFile": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
+      "AssetFile": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1953,7 +1953,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:32:24 GMT"
+          "Value": "Tue, 10 Jun 2025 17:00:20 GMT"
         },
         {
           "Name": "Cache-Control",

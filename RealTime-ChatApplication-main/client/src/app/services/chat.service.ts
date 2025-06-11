@@ -207,18 +207,29 @@ private authService = inject(AuthService);
       this.isLoading.set(false);
     });
 
-    this.hubConnection.on("ReceiveMessage", (message: Message) => {
-      this.chatMessages.update(messages => {
-        // Check if message already exists
-        const exists = messages.some(m => 
-          m.id === message.id || 
-          (m.content === message.content && m.createdDate === message.createdDate)
-        );
-        
-        return exists ? messages : [...messages, message];
-      });
-      this.chatMessagesSubject.next();
+     this.hubConnection.on("ReceiveMessage", (message: Message) => {
+        // Verify this message belongs to current chat
+        const isCurrentChatMessage = 
+            (message.senderId === this.currentOpenedChat()?.id && 
+             message.receiverId === this.authService.currentLoggedUser?.id) ||
+            (message.receiverId === this.currentOpenedChat()?.id && 
+             message.senderId === this.authService.currentLoggedUser?.id);
+
+        if (isCurrentChatMessage) {
+            this.chatMessages.update(messages => {
+                // Check for duplicates
+                const exists = messages.some(m => 
+                    m.id === message.id || 
+                    (m.content === message.content && 
+                     Math.abs(new Date(m.createdDate).getTime() - new Date(message.createdDate).getTime()) < 1000)
+                );
+                
+                return exists ? messages : [...messages, message];
+            });
+            this.chatMessagesSubject.next();
+        }
     });
+  
   }
 
   private updateUserTypingStatus(userName: string, isTyping: boolean) {
@@ -233,23 +244,43 @@ private authService = inject(AuthService);
       this.hubConnection.stop().catch(error => console.log(error));
     }
   }
-  sendMessage(message: string) {
-  const newMessage = {
+  async sendMessage(message: string): Promise<void> {
+  if (!this.currentOpenedChat()?.id || !this.authService.currentLoggedUser || !this.hubConnection) {
+    throw new Error('No chat selected, user not logged in, or connection not established');
+  }
+
+  // Create the new message object with reactions
+  const newMessage: Message = {
     content: message,
-    senderId: this.authService.currentLoggedUser!.id,
-    receiverId: this.currentOpenedChat()?.id!,
-    createdDate: new Date().toString(),
+    senderId: this.authService.currentLoggedUser.id.toString(),
+    receiverId: this.currentOpenedChat()!.id,
+    createdDate: new Date().toISOString(),
     isRead: false,
-    id: Date.now(), // Use timestamp as temporary ID
+    id: Date.now(), // Temporary ID until server responds
+   
   };
 
-    this.chatMessages.update(messages => [...messages, newMessage]);
-  
-    this.hubConnection?.invoke('SendMessage', {
-      receiverId: this.currentOpenedChat()?.id,
-      content: message,
-    }).catch(error => console.log('Send error:', error));
+  // Optimistically add to local messages
+  this.chatMessages.update(messages => [...messages, newMessage]);
+
+  try {
+    // Send to server
+    await this.hubConnection.invoke('SendMessage', {
+      receiverId: this.currentOpenedChat()!.id,
+      content: message
+    });
+    
+    console.log('Message sent successfully');
+    
+  } catch (error) {
+    console.error('Send error:', error);
+    // Remove the optimistic update if send fails
+    this.chatMessages.update(messages => 
+      messages.filter(m => m.id !== newMessage.id)
+    );
+    throw error;
   }
+}
   status(userName: string): string {
     if (!this.currentOpenedChat()) return 'offline';
 
@@ -270,4 +301,5 @@ private authService = inject(AuthService);
     this.hubConnection.invoke('NotifyTyping', currentChat.userName)
       .catch(error => console.log('Typing error:', error));
   }
+
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XtWNc6R7/qo=",
+  "dgSpecHash": "A/PbkVPpfT8=",
   "success": true,
-  "projectFilePath": "E:\\OMEN\\Chat-Application\\RealTime-ChatApplication-main\\RealTime-ChatApplication-main\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OMEN\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
