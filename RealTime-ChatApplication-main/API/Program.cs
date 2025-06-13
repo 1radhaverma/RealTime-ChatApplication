@@ -22,10 +22,8 @@ var JWTSetting = builder.Configuration.GetSection("JWTSettings");
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddDbContext<AppDbContext>(x =>
-    x.UseSqlite("Data Source=chat.db")
-     .LogTo(Console.WriteLine, LogLevel.Information) // Add logging
-     .EnableSensitiveDataLogging()); // For debugging
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddIdentityCore<AppUser>()
     .AddEntityFrameworkStores<AppDbContext>()
@@ -84,7 +82,12 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-
+//migrate pending migrations
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.Migrate();
+}
 //app.UseHttpsRedirection();
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:4200", "http://localhost:4200"));
 app.UseAuthentication();

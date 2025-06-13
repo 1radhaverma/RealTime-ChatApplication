@@ -1,2 +1,4 @@
 # Ignore Visual Studio and Rider settings
 .vs/
+chat.db
+API.http
