@@ -4,7 +4,7 @@ import { AfterViewChecked, Component, ElementRef, ViewChild,
 import { ChatService } from '../../services/chat.service';
 import {MatProgressSpinner} from "@angular/material/progress-spinner";
 import { AuthService } from '../../services/auth.service';
-import { DatePipe ,NgClass, NgIf, NgFor } from '@angular/common';
+import {  NgClass, NgIf, NgFor } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject } from 'rxjs';
@@ -15,7 +15,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-chat-box',
-  imports: [MatProgressSpinner, DatePipe, MatIconModule ],
+  imports: [MatProgressSpinner,  MatIconModule ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './chat-box.component.html',
   styles: [`
@@ -176,19 +176,20 @@ ngAfterViewChecked() {
     }
 }
 
-formatMessageTime(date: string): string {
-    const messageDate = new Date(date);
-    if (isNaN(messageDate.getTime())) {
-      return '';
-    }
+formatMessageTime(dateString: string): string {
+    // Parse the date as UTC if it ends with 'Z'
+    const isUTC = dateString.endsWith('Z');
+    const date = isUTC ? new Date(dateString) : new Date(dateString + 'Z');
     
-    // Use the user's locale for time formatting
-    return messageDate.toLocaleTimeString([], { 
-      hour: '2-digit', 
-      minute: '2-digit',
-      hour12: true 
+    if (isNaN(date.getTime())) return '';
+
+    return date.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
     });
 }
+
    isUserTyping(): boolean {
     const currentChat = this.chatService.currentOpenedChat();
     if (!currentChat) return false;
