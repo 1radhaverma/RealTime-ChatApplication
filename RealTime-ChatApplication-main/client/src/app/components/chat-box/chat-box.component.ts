@@ -10,14 +10,12 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged, filter, takeUntil } from 'rxjs/operators'; 
 import { Message } from '../../models/message';
-import { PickerComponent } from '@ctrl/ngx-emoji-mart';
-
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 @Component({
   selector: 'app-chat-box',
-  imports: [MatProgressSpinner, DatePipe, MatIconModule,PickerComponent ],
+  imports: [MatProgressSpinner, DatePipe, MatIconModule ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './chat-box.component.html',
   styles: [`

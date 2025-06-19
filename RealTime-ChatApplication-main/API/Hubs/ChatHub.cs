@@ -11,12 +11,27 @@ using System.Collections.Concurrent;
 
 namespace API.Hubs
 {
+    /// <summary>
+    /// SignalR Hub for real-time chat functionality
+    /// </summary>
     [Authorize]
-    public class ChatHub(UserManager<AppUser> userManager, AppDbContext context) :
-    Hub
+    public class ChatHub(UserManager<AppUser> userManager, AppDbContext context) : Hub
     {
+        #region fields
+
+        /// <summary>
+        /// Thread-safe dictionary to track online users
+        /// Key: Username, Value: OnlineUserDto
+        /// </summary>
         public static readonly ConcurrentDictionary<string, OnlineUserDto>
         onlineUsers = new();
+        #endregion
+
+        #region public methods
+
+        /// <summary>
+        /// Handles new client connections
+        /// </summary>
         public override async Task OnConnectedAsync()
         {
             var httpContext = Context.GetHttpContext();
@@ -48,6 +63,12 @@ namespace API.Hubs
             }
             await Clients.All.SendAsync("OnlineUsers", await GetAllUsers());
         }
+
+        /// <summary>
+        /// Loads paginated messages between current user and recipient
+        /// </summary>
+        /// <param name="recipientId">ID of the message recipient</param>
+        /// <param name="pageNumber">Current page number (1-based)</param>
         public async Task LoadMessages(string recipientId, int pageNumber = 1)
         {
             try
@@ -104,49 +125,11 @@ namespace API.Hubs
                 Console.WriteLine($"Error loading messages: {ex.Message}");
             }
         }
-        //public async Task LoadMessages(string recipientId, int pageNumber = 1)
-        //{
-        //    int pageSize = 10;
-        //    var userName = Context.User!.Identity!.Name;
-        //    var currentUser = await userManager.FindByNameAsync(userName!);
 
-        //    if(currentUser is null) 
-        //    {
-        //        return;
-        //    }
-        //    List<MessageRequestDto> messages = await context.Messages
-        //         .Where(x => (x.ReceiverId == currentUser.Id && x.SenderId == recipientId ||
-        //          x.SenderId == currentUser!.Id && x.ReceiverId == recipientId))
-        //         .OrderByDescending(x => x.CreatedDate)
-        //         .Skip((pageNumber - 1) * pageSize)
-        //         .Take(pageSize)
-        //         .Select(x => new MessageRequestDto
-        //         {
-        //             Id = x.Id,
-        //             SenderId = x.SenderId,
-        //             ReceiverId = x.ReceiverId,
-        //             Content = x.Content,
-        //             CreatedDate = x.CreatedDate
-        //         }).ToListAsync();
-
-        //    foreach (var message in messages)
-        //    {
-        //        var msg = await context.Messages.FirstOrDefaultAsync(x => x.Id == message.Id);
-        //        if (msg != null && msg.ReceiverId == currentUser.Id)
-        //        {
-        //            msg.IsRead = true;
-        //            await context.SaveChangesAsync();
-        //        }
-        //    }
-        //    await Clients.User(currentUser.Id).SendAsync("ReceiveMessageList", new
-        //    {
-        //        messages,
-        //        totalCount = await context.Messages.CountAsync(x =>
-        //            (x.ReceiverId == currentUser.Id && x.SenderId == recipientId) ||
-        //            (x.SenderId == currentUser.Id && x.ReceiverId == recipientId))
-        //    });
-
-        //}
+        /// <summary>
+        /// Sends a message between users
+        /// </summary>
+        /// <param name="message">Message DTO containing content and recipient</param>
         public async Task SendMessage(MessageRequestDto message)
         {
             try
@@ -198,6 +181,11 @@ namespace API.Hubs
                 throw;
             }
         }
+
+        /// <summary>
+        /// Notifies a user when someone is typing
+        /// </summary>
+        /// <param name="recipientUserName">Username of the recipient</param>
         public async Task NotifyTyping(string recipientUserName)
         {
             var senderUserName = Context.User!.Identity!.Name;
@@ -214,12 +202,24 @@ namespace API.Hubs
             }
 
         }
+
+        /// <summary>
+        /// Handles client disconnections
+        /// </summary>
         public override async Task OnDisconnectedAsync(Exception? exception)
         {
             var userName = Context.User!.Identity!.Name;
             onlineUsers.TryRemove(userName!, out _);
             await Clients.All.SendAsync("OnlineUsers", await GetAllUsers());
         }
+        #endregion
+
+        #region private methods
+
+        /// <summary>
+        /// Gets all users with their online status and unread message counts
+        /// </summary>
+        /// <returns>List of OnlineUserDto</returns>
         private async Task<IEnumerable<OnlineUserDto>> GetAllUsers()
         {
             var username = Context.User!.GetUserNmae();
@@ -236,6 +236,6 @@ namespace API.Hubs
 
             return users;
         }
-
+        #endregion
     }
 }

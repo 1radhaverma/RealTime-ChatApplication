@@ -4710,11 +4710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\API.csproj",
+      "projectUniqueName": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\API.csproj",
+      "projectPath": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\API.csproj",
       "packagesPath": "C:\\Users\\OMEN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OMEN\\OneDrive\\Desktop\\cht app\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\obj\\",
+      "outputPath": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4803,7 +4803,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

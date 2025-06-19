@@ -3,6 +3,7 @@ using API.DTOs;
 using API.Extensions;
 using API.Models;
 using API.Services;
+using API.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,19 @@ namespace API.Endpoints
 {
     public static class AccountEndpoint
     {
+        #region fields
+
+        private static readonly IFileUpload _fileUpload;
+
+        #endregion
+
+        #region public methods
+
+        /// <summary>
+        /// Maps account-related endpoints to the application
+        /// </summary>
+        /// <param name="app">The WebApplication instance</param> 
+        /// <returns>Configured route group builder</returns>
         public static RouteGroupBuilder MapAccountEndpoint(this WebApplication app)
         {
             var group = app.MapGroup("/api/account").WithTags("account");
@@ -30,7 +44,7 @@ namespace API.Endpoints
                 {
                     return Results.BadRequest(Response<string>.Failure("Profile Image Required."));
                 }
-                string fileName = await FileUpload.Upload(profileImage);
+                string fileName = await _fileUpload.Upload(profileImage);
                 string picture = $"{context.Request.Scheme}://{context.Request.Host}/uploads/{fileName}"; // Correct URL
 
                 var user = new AppUser
@@ -85,5 +99,7 @@ namespace API.Endpoints
             }).RequireAuthorization();
             return group;
         }
+
+        #endregion
     }
 }
