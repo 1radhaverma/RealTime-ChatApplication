@@ -101,7 +101,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,6 +114,14 @@
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:413989041:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Document",
@@ -138,8 +146,7 @@
               "RelativeToolTip": "API\\Services\\FileUpload.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T13:29:04.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T13:29:04.87Z"
             },
             {
               "$type": "Document",
@@ -151,8 +158,7 @@
               "RelativeToolTip": "API\\Endpoints\\AccountEndpoint.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAAAG8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T13:23:25.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T13:23:25.98Z"
             },
             {
               "$type": "Document",
@@ -176,8 +182,7 @@
               "RelativeToolTip": "API\\Program.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAQwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T06:19:11.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T06:19:11.996Z"
             },
             {
               "$type": "Document",
