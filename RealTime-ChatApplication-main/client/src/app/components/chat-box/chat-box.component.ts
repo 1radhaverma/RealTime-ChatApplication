@@ -149,19 +149,22 @@ ngAfterViewChecked() {
 
   
   formatMessageDate(date: string): string {
+    // Ensure the date is parsed correctly (handles ISO strings)
     const messageDate = new Date(date);
+    
+    // Check if the date is valid
+    if (isNaN(messageDate.getTime())) {
+      return '';
+    }
+
     const today = new Date();
     const yesterday = new Date(today);
     yesterday.setDate(yesterday.getDate() - 1);
 
-    // Normalize dates to midnight for comparison
-    const normalizedMsgDate = new Date(messageDate.getFullYear(), messageDate.getMonth(), messageDate.getDate());
-    const normalizedToday = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-    const normalizedYesterday = new Date(yesterday.getFullYear(), yesterday.getMonth(), yesterday.getDate());
-
-    if (normalizedMsgDate.getTime() === normalizedToday.getTime()) {
+    // Compare dates (ignoring time)
+    if (messageDate.toDateString() === today.toDateString()) {
       return 'Today';
-    } else if (normalizedMsgDate.getTime() === normalizedYesterday.getTime()) {
+    } else if (messageDate.toDateString() === yesterday.toDateString()) {
       return 'Yesterday';
     } else {
       return messageDate.toLocaleDateString('en-US', { 
@@ -173,6 +176,19 @@ ngAfterViewChecked() {
     }
 }
 
+formatMessageTime(date: string): string {
+    const messageDate = new Date(date);
+    if (isNaN(messageDate.getTime())) {
+      return '';
+    }
+    
+    // Use the user's locale for time formatting
+    return messageDate.toLocaleTimeString([], { 
+      hour: '2-digit', 
+      minute: '2-digit',
+      hour12: true 
+    });
+}
    isUserTyping(): boolean {
     const currentChat = this.chatService.currentOpenedChat();
     if (!currentChat) return false;
