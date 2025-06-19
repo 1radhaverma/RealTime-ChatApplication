@@ -3,6 +3,7 @@ using API.Endpoints;
 using API.Hubs;
 using API.Models;
 using API.Services;
+using API.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +19,12 @@ builder.Services.AddCors(options =>
        builder.WithOrigins("http://localhost:4200","http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
     });
 });
+var uploadsPath = Path.Combine(builder.Environment.WebRootPath, "uploads");
+if (!Directory.Exists(uploadsPath))
+{
+    Directory.CreateDirectory(uploadsPath);
+}
+
 var JWTSetting = builder.Configuration.GetSection("JWTSettings");
 
 // Add services to the container.
@@ -74,7 +81,7 @@ builder.Services.AddAuthentication(opt =>
 //              .AllowCredentials();
 //    });
 //});
-
+builder.Services.AddTransient<IFileUpload, FileUpload>();
 builder.Services.AddOpenApi();
 builder.Services.AddSignalR();
 var app = builder.Build();

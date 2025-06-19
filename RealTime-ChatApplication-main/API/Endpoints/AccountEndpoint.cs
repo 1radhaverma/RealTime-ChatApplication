@@ -30,37 +30,44 @@ namespace API.Endpoints
         public static RouteGroupBuilder MapAccountEndpoint(this WebApplication app)
         {
             var group = app.MapGroup("/api/account").WithTags("account");
-            group.MapPost("/register", async (HttpContext context,  UserManager<AppUser>
-                userManager , [FromForm] string userName, [FromForm] string fullName, [FromForm] string email, [FromForm] string password, [FromForm] IFormFile? profileImage
-               ) => 
+            group.MapPost("/register", async (
+          HttpContext context,
+          UserManager<AppUser> userManager,
+          [FromServices] IFileUpload fileUpload,
+          [FromForm] RegisterDTO dto) =>
             {
-                var userFromDb = await userManager.FindByEmailAsync(email);
+            
+                var userFromDb = await userManager.FindByEmailAsync(dto.Email);
 
                 if (userFromDb is not null)
                 {
                     return Results.BadRequest(Response<string>.Failure("User already exists."));
                 }
-                if (profileImage is null)
+
+                if (dto.ProfileImage is null)
                 {
                     return Results.BadRequest(Response<string>.Failure("Profile Image Required."));
                 }
-                string fileName = await _fileUpload.Upload(profileImage);
-                string picture = $"{context.Request.Scheme}://{context.Request.Host}/uploads/{fileName}"; // Correct URL
+
+                string fileName = await fileUpload.Upload(dto.ProfileImage);
+                string picture = $"{context.Request.Scheme}://{context.Request.Host}/uploads/{fileName}";
 
                 var user = new AppUser
                 {
-                    Email = email,
-                    Fullname = fullName,
-                    UserName = userName,
+                    Email = dto.Email,
+                    Fullname = dto.FullName,
+                    UserName = dto.UserName,
                     ProfileImage = picture,
-
                 };
-                var result = await userManager.CreateAsync(user, password);
+
+                var result = await userManager.CreateAsync(user, dto.Password);
+
                 if (!result.Succeeded)
                 {
-                    return Results.BadRequest(Response<string>.Failure(result.
-                        Errors.Select(x => x.Description).FirstOrDefault()!));
+                    return Results.BadRequest(Response<string>.Failure(
+                        result.Errors.Select(x => x.Description).FirstOrDefault()!));
                 }
+
                 return Results.Ok(Response<string>.Success("", "User created successfully."));
             }).DisableAntiforgery();
 

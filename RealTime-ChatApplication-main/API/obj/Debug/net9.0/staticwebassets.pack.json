@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\uploads\\1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg"
     },
     {
+      "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\288b46a7-1658-4656-816e-4597bd84c091.jpg",
+      "PackagePath": "staticwebassets\\uploads\\288b46a7-1658-4656-816e-4597bd84c091.jpg"
+    },
+    {
       "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg",
       "PackagePath": "staticwebassets\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg"
     },
@@ -21,8 +25,16 @@
       "PackagePath": "staticwebassets\\uploads\\314da41c-ac18-42d1-9d88-703ecfded0f9.png"
     },
     {
+      "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\35016334-50f7-4f0d-83d8-7c7ef88f200e.png",
+      "PackagePath": "staticwebassets\\uploads\\35016334-50f7-4f0d-83d8-7c7ef88f200e.png"
+    },
+    {
       "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png",
       "PackagePath": "staticwebassets\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png"
+    },
+    {
+      "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\38230863-ed35-45ff-9549-6ddde296bb50.jpg",
+      "PackagePath": "staticwebassets\\uploads\\38230863-ed35-45ff-9549-6ddde296bb50.jpg"
     },
     {
       "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
@@ -41,6 +53,10 @@
       "PackagePath": "staticwebassets\\uploads\\8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg"
     },
     {
+      "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9aa34c03-a670-41cd-a87c-0f3dd957a195.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9aa34c03-a670-41cd-a87c-0f3dd957a195.jpg"
+    },
+    {
       "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
       "PackagePath": "staticwebassets\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png"
     },
@@ -55,6 +71,10 @@
     {
       "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg",
       "PackagePath": "staticwebassets\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg"
+    },
+    {
+      "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b1d1104b-3324-4ab8-8efb-4572422d1ea6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b1d1104b-3324-4ab8-8efb-4572422d1ea6.jpg"
     },
     {
       "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b77c6a86-8592-4954-b20e-1da67305fda3.jpg",
@@ -77,12 +97,24 @@
       "PackagePath": "staticwebassets\\uploads\\e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg"
     },
     {
+      "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e74433ce-9694-4c5a-b2d3-40f541561374.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e74433ce-9694-4c5a-b2d3-40f541561374.jpg"
+    },
+    {
       "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
       "PackagePath": "staticwebassets\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg"
     },
     {
+      "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\f0fb5805-ab10-48ba-a4ca-499451a77c32.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f0fb5805-ab10-48ba-a4ca-499451a77c32.jpg"
+    },
+    {
       "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
       "PackagePath": "staticwebassets\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg"
+    },
+    {
+      "Id": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616.jpg"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

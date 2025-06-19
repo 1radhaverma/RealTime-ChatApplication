@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WPBAYk0oSjy0KjfhHMcmSQ/Z63m72HW31essO5Qkqu8=",
+  "Hash": "cpIVb+800BjiEuvrcjyLVkiDqRadleC2CP2wCS5ZSv0=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -80,6 +80,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\1e4345bf-ab79-4b9f-8ed9-bb6d433efb8d.jpg"
     },
     {
+      "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\288b46a7-1658-4656-816e-4597bd84c091.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/288b46a7-1658-4656-816e-4597bd84c091#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r1fz4ctwcl",
+      "Integrity": "7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\288b46a7-1658-4656-816e-4597bd84c091.jpg"
+    },
+    {
       "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
@@ -122,6 +143,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\314da41c-ac18-42d1-9d88-703ecfded0f9.png"
     },
     {
+      "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\35016334-50f7-4f0d-83d8-7c7ef88f200e.png",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/35016334-50f7-4f0d-83d8-7c7ef88f200e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sosehj69nc",
+      "Integrity": "RPrVXxUgXjbf8mso5efSCCvWdfZxuS9ULhtvFpU6N2U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\35016334-50f7-4f0d-83d8-7c7ef88f200e.png"
+    },
+    {
       "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png",
       "SourceId": "API",
       "SourceType": "Discovered",
@@ -141,6 +183,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png"
+    },
+    {
+      "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\38230863-ed35-45ff-9549-6ddde296bb50.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/38230863-ed35-45ff-9549-6ddde296bb50#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h881oj8mcy",
+      "Integrity": "8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\38230863-ed35-45ff-9549-6ddde296bb50.jpg"
     },
     {
       "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\67225c8f-6f92-4572-a609-0c2bf230a8b0.jpg",
@@ -227,6 +290,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8dab563b-22e6-4d11-9eeb-765b75d93c4f.jpg"
     },
     {
+      "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9aa34c03-a670-41cd-a87c-0f3dd957a195.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/9aa34c03-a670-41cd-a87c-0f3dd957a195#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dqs5lt49tn",
+      "Integrity": "S5Y3chkVVBXu6wyIUy23AKWKEpgAInZA8zSJD7lWOac=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9aa34c03-a670-41cd-a87c-0f3dd957a195.jpg"
+    },
+    {
       "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
       "SourceId": "API",
       "SourceType": "Discovered",
@@ -309,6 +393,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\a7963e62-4386-4bb2-b47f-b20a3e59f5e7.jpg"
+    },
+    {
+      "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b1d1104b-3324-4ab8-8efb-4572422d1ea6.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/b1d1104b-3324-4ab8-8efb-4572422d1ea6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h881oj8mcy",
+      "Integrity": "8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b1d1104b-3324-4ab8-8efb-4572422d1ea6.jpg"
     },
     {
       "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b77c6a86-8592-4954-b20e-1da67305fda3.jpg",
@@ -416,6 +521,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\e30f4ab3-9cd4-49e1-8956-a589830abd3f.jpg"
     },
     {
+      "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e74433ce-9694-4c5a-b2d3-40f541561374.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/e74433ce-9694-4c5a-b2d3-40f541561374#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h881oj8mcy",
+      "Integrity": "8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\e74433ce-9694-4c5a-b2d3-40f541561374.jpg"
+    },
+    {
       "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
@@ -437,6 +563,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg"
     },
     {
+      "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\f0fb5805-ab10-48ba-a4ca-499451a77c32.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/f0fb5805-ab10-48ba-a4ca-499451a77c32#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "znbbfq6xsm",
+      "Integrity": "MTk+47yywTOnb6Z9sHtFiDUQ0xsFLvtotyIsqFlbzAM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f0fb5805-ab10-48ba-a4ca-499451a77c32.jpg"
+    },
+    {
       "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
@@ -456,6 +603,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg"
+    },
+    {
+      "Identity": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r1fz4ctwcl",
+      "Integrity": "7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616.jpg"
     }
   ],
   "Endpoints": [
@@ -706,6 +874,88 @@
       ]
     },
     {
+      "Route": "uploads/288b46a7-1658-4656-816e-4597bd84c091.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\288b46a7-1658-4656-816e-4597bd84c091.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 14:00:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/288b46a7-1658-4656-816e-4597bd84c091.r1fz4ctwcl.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\288b46a7-1658-4656-816e-4597bd84c091.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 14:00:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r1fz4ctwcl"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/288b46a7-1658-4656-816e-4597bd84c091.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y="
+        }
+      ]
+    },
+    {
       "Route": "uploads/312cda27-aa78-403a-aa05-f78762f64426.7dy64kqs5j.jpg",
       "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\312cda27-aa78-403a-aa05-f78762f64426.jpg",
       "Selectors": [],
@@ -870,6 +1120,88 @@
       ]
     },
     {
+      "Route": "uploads/35016334-50f7-4f0d-83d8-7c7ef88f200e.png",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\35016334-50f7-4f0d-83d8-7c7ef88f200e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3277029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RPrVXxUgXjbf8mso5efSCCvWdfZxuS9ULhtvFpU6N2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RPrVXxUgXjbf8mso5efSCCvWdfZxuS9ULhtvFpU6N2U="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/35016334-50f7-4f0d-83d8-7c7ef88f200e.sosehj69nc.png",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\35016334-50f7-4f0d-83d8-7c7ef88f200e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3277029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RPrVXxUgXjbf8mso5efSCCvWdfZxuS9ULhtvFpU6N2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sosehj69nc"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/35016334-50f7-4f0d-83d8-7c7ef88f200e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RPrVXxUgXjbf8mso5efSCCvWdfZxuS9ULhtvFpU6N2U="
+        }
+      ]
+    },
+    {
       "Route": "uploads/37cafe91-d491-463b-83b7-4e560494167b.5kgvka4s16.png",
       "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\37cafe91-d491-463b-83b7-4e560494167b.png",
       "Selectors": [],
@@ -948,6 +1280,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-laFlxZuPInQvcRbJMdiK+dQFnmAVC56NkZ3FM4s0Thg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/38230863-ed35-45ff-9549-6ddde296bb50.h881oj8mcy.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\38230863-ed35-45ff-9549-6ddde296bb50.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:53:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h881oj8mcy"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/38230863-ed35-45ff-9549-6ddde296bb50.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/38230863-ed35-45ff-9549-6ddde296bb50.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\38230863-ed35-45ff-9549-6ddde296bb50.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:53:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q="
         }
       ]
     },
@@ -1280,6 +1694,88 @@
       ]
     },
     {
+      "Route": "uploads/9aa34c03-a670-41cd-a87c-0f3dd957a195.dqs5lt49tn.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9aa34c03-a670-41cd-a87c-0f3dd957a195.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14837"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S5Y3chkVVBXu6wyIUy23AKWKEpgAInZA8zSJD7lWOac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 12:59:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dqs5lt49tn"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9aa34c03-a670-41cd-a87c-0f3dd957a195.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S5Y3chkVVBXu6wyIUy23AKWKEpgAInZA8zSJD7lWOac="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9aa34c03-a670-41cd-a87c-0f3dd957a195.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9aa34c03-a670-41cd-a87c-0f3dd957a195.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14837"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S5Y3chkVVBXu6wyIUy23AKWKEpgAInZA8zSJD7lWOac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 12:59:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S5Y3chkVVBXu6wyIUy23AKWKEpgAInZA8zSJD7lWOac="
+        }
+      ]
+    },
+    {
       "Route": "uploads/9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
       "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\9dcf80c9-8066-4a18-97de-91fe72c03afb.png",
       "Selectors": [],
@@ -1604,6 +2100,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-mOjCWV8btiinA9mCDv06MbL5/mwcnVOnaYPA6kv6jiw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b1d1104b-3324-4ab8-8efb-4572422d1ea6.h881oj8mcy.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b1d1104b-3324-4ab8-8efb-4572422d1ea6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:38:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h881oj8mcy"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/b1d1104b-3324-4ab8-8efb-4572422d1ea6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b1d1104b-3324-4ab8-8efb-4572422d1ea6.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\b1d1104b-3324-4ab8-8efb-4572422d1ea6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:38:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q="
         }
       ]
     },
@@ -2018,6 +2596,88 @@
       ]
     },
     {
+      "Route": "uploads/e74433ce-9694-4c5a-b2d3-40f541561374.h881oj8mcy.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e74433ce-9694-4c5a-b2d3-40f541561374.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:52:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h881oj8mcy"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/e74433ce-9694-4c5a-b2d3-40f541561374.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e74433ce-9694-4c5a-b2d3-40f541561374.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\e74433ce-9694-4c5a-b2d3-40f541561374.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:52:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SMYAhO2j7kmifjMP08LzGq6umLYkuP19CW+KRD1P9Q="
+        }
+      ]
+    },
+    {
       "Route": "uploads/efacaefe-1f4f-4dc2-810d-903d96216607.4t7b05v6jr.jpg",
       "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\efacaefe-1f4f-4dc2-810d-903d96216607.jpg",
       "Selectors": [],
@@ -2100,6 +2760,88 @@
       ]
     },
     {
+      "Route": "uploads/f0fb5805-ab10-48ba-a4ca-499451a77c32.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\f0fb5805-ab10-48ba-a4ca-499451a77c32.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47407"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MTk+47yywTOnb6Z9sHtFiDUQ0xsFLvtotyIsqFlbzAM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:01:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MTk+47yywTOnb6Z9sHtFiDUQ0xsFLvtotyIsqFlbzAM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f0fb5805-ab10-48ba-a4ca-499451a77c32.znbbfq6xsm.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\f0fb5805-ab10-48ba-a4ca-499451a77c32.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47407"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MTk+47yywTOnb6Z9sHtFiDUQ0xsFLvtotyIsqFlbzAM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 13:01:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "znbbfq6xsm"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f0fb5805-ab10-48ba-a4ca-499451a77c32.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MTk+47yywTOnb6Z9sHtFiDUQ0xsFLvtotyIsqFlbzAM="
+        }
+      ]
+    },
+    {
       "Route": "uploads/fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
       "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\fa56d1af-e97c-4b2e-93f0-44f6357366f8.jpg",
       "Selectors": [],
@@ -2178,6 +2920,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-mOjCWV8btiinA9mCDv06MbL5/mwcnVOnaYPA6kv6jiw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 14:00:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616.r1fz4ctwcl.jpg",
+      "AssetFile": "E:\\OMEN\\Chat Application\\RealTime-ChatApplication\\RealTime-ChatApplication-main\\API\\wwwroot\\uploads\\ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Jun 2025 14:00:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r1fz4ctwcl"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ff348fb1-83e4-4ff1-9fcb-d6d8e2a11616.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7zpMRYML15s5kcAOoGjuR/lug98PoGv4gGKm5Ir6Q+Y="
         }
       ]
     }
